@@ -1,4 +1,3 @@
-import NavBar from "./components/NavBar";
 import products from "./components/products";
 import Product from "./components/Product";
 import Terms from "./components/Terms";
@@ -13,9 +12,7 @@ const terms3 =
 const Home = () => {
 	return (
 		<>
-			<header>
-				<NavBar />
-			</header>
+			<header></header>
 			<main>
 				<div className="products-container">
 					<Product products={products} />
@@ -26,7 +23,6 @@ const Home = () => {
 					<Terms information={terms3} />
 				</div>
 			</main>
-			<footer></footer>
 		</>
 	);
 };

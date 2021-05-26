@@ -5,6 +5,39 @@
   padding: 0.7rem;
 }
 
+.nav-container .nav-links {
+  display: none;
+}
+
+.nav-container .showNav {
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 10%;
+  background-color: white;
+  padding: 2rem;
+  width: 90%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.nav-container .showNav .right-side-nav {
+  margin: 1rem 0;
+}
+
+.nav-container .showNav .left-side-nav li + li {
+  margin-top: 1rem;
+}
+
+.nav-container .showNav .right-side-nav li + li {
+  margin-top: 1rem;
+}
+
+.nav-container .showNav .login {
+  display: flex;
+  border: 1px solid black;
+}
+
 .hamburger-menu {
   height: 40px;
   width: 40px;
@@ -30,12 +63,8 @@
   margin-top: 0.25rem;
 }
 
-.left-side-nav .nav-list {
-  display: none;
-}
-
-.right-side-nav .nav-link {
-  display: none;
+.hamburger-menu .rotate {
+  transform: rotate(180deg);
 }
 
 .products-container {
@@ -144,6 +173,10 @@ footer .copy-right p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {

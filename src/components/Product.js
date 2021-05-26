@@ -1,5 +1,4 @@
 const Product = ({ products }) => {
-	console.log(products);
 	const allProducts = products.map((product) => {
 		return (
 			<section key={product.id}>

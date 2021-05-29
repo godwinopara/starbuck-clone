@@ -1,43 +1,71 @@
+@import "./footer";
+
+nav {
+	box-shadow: 5px 5px 26px -7px rgba(0, 0, 0, 0.68);
+}
 .nav-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0.7rem;
+	position: relative;
 
-	.nav-links {
-		display: none;
-	}
-
-	.showNav {
-		display: block;
+	.mobile-nav {
 		position: fixed;
+		top: 10.6%;
 		right: 0;
-		top: 10%;
 		background-color: white;
-		padding: 2rem;
-		width: 90%;
-		height: 90vh;
-		overflow: hidden;
-
-		.right-side-nav {
-			margin: 1rem 0;
-		}
+		height: 100vh;
+		width: 80%;
+		padding: 1rem 2rem;
 
 		.left-side-nav {
+			margin: 1rem 0;
+			border-bottom: 2px solid $light-gray;
+
+			padding: 1rem 0;
+
 			li + li {
 				margin-top: 1rem;
 			}
-		}
 
+			a {
+				font-size: 1.2rem;
+			}
+		}
 		.right-side-nav {
-			li + li {
-				margin-top: 1rem;
-			}
-		}
-
-		.login {
 			display: flex;
-			border: 1px solid black;
+			flex-direction: column;
+			.location {
+				display: flex;
+				align-items: center;
+				ul {
+					margin-left: 0.5rem;
+				}
+				order: 2;
+			}
+
+			.location-marker {
+				font-size: 1.4rem;
+			}
+
+			.signup {
+				order: 1;
+
+				ul {
+					display: flex;
+					margin: 0.5rem 0 1rem;
+					li + li {
+						margin-left: 1rem;
+					}
+
+					li {
+						border: 1px solid black;
+						border-radius: 100px;
+						padding: 0.3rem 0.8rem;
+					}
+				}
+			}
 		}
 	}
 }

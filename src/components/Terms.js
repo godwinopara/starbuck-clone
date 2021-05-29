@@ -1,7 +1,7 @@
 const Terms = ({ information }) => {
-	const displayTerms = information.map((info) => {
+	const displayTerms = information.map((info, index) => {
 		return (
-			<div className="item container">
+			<div key={index} className="item container">
 				<p>{info}</p>
 			</div>
 		);

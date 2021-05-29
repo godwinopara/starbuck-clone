@@ -8,9 +8,6 @@ footer {
 		border-top: 1px solid $light-gray;
 		border-bottom: 1px solid $light-gray;
 		border-width: 3px;
-		ul {
-			display: none;
-		}
 
 		div + div {
 			margin-top: 2rem;
@@ -19,6 +16,12 @@ footer {
 			opacity: 1;
 			color: rgb(146, 145, 145);
 		}
+
+		.footer-links {
+			& > div {
+				cursor: pointer;
+			}
+		}
 	}
 	.social-media {
 		display: flex;
@@ -26,6 +29,7 @@ footer {
 		.footer-icons {
 			border-radius: 100%;
 			padding: 5px;
+			cursor: pointer;
 		}
 
 		.footer-icons + .footer-icons {

@@ -1,3 +1,4 @@
+import React from "react";
 import products from "./components/products";
 import Product from "./components/Product";
 import Terms from "./components/Terms";

@@ -1,127 +1,114 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import NavItem from "./NavComponents/NavItem";
+import React, { useState } from "react";
 
 const Footer = () => {
+	const [showAbout, setshowAbout] = useState(false);
+	const [showCareers, setshowCareers] = useState(false);
+	const [showSocial, setshowSocial] = useState(false);
+	const [showPartners, setshowPartners] = useState(false);
+	const [showOrder, setshowOrder] = useState(false);
+
+	const aboutLinks = [
+		"Our Heritage",
+		"Our Coffee",
+		"Stories and News",
+		"Investor Relations",
+		"Policies and Standard",
+		"Customer Service",
+	];
+	const careersLinks = [
+		"Culture and Values",
+		"Inclusion, Diversity and Equity",
+		"College Achievement Plan",
+		"U.S Careers",
+		"International Careers",
+	];
+
+	const socialImpactLinks = [
+		"Ethical Sourcing",
+		"Leading in Sustainablity",
+		"Strengthening Communities",
+		"Creating Opportunities",
+		"Global Social Impact Report",
+	];
+
+	const partnersLinks = [
+		"Landlord Support Center",
+		"Suppliers",
+		"Corporate Gift Card Sales",
+		"Office and Foodservice Coffee",
+	];
+	const orderAndPickLinks = [
+		"Order on the App",
+		"Order on the Web",
+		"Delivery",
+		"Order and Pickup Options",
+		"Explore and Find Coffe for Home",
+	];
+
+	const privacyAndTermsLink = [
+		"Privacy Policy",
+		"Terms of Use",
+		"CA Supply Chain Act",
+		"Submit Your Idea",
+		"Cookie Preferences",
+	];
+
+	const handleShowAbout = () => {
+		showAbout ? setshowAbout(false) : setshowAbout(true);
+	};
+	const handleShowCareers = () => {
+		showCareers ? setshowCareers(false) : setshowCareers(true);
+	};
+	const handleShowSocial = () => {
+		showSocial ? setshowSocial(false) : setshowSocial(true);
+	};
+	const handleShowPartners = () => {
+		showPartners ? setshowPartners(false) : setshowPartners(true);
+	};
+	const handleShowOrder = () => {
+		showOrder ? setshowOrder(false) : setshowOrder(true);
+	};
+
 	return (
 		<footer>
 			<div className="footer-container ">
 				<div className="footer-links container">
 					<div className="about">
-						<div className="about-title title">
+						<div className="about-title title" onClick={handleShowAbout}>
 							<h3>About Us</h3>
 							<FontAwesomeIcon icon="angle-down" size="2x" className="drop-down" />
 						</div>
-						<ul>
-							<li>
-								<a href="/">Our Heritage</a>
-							</li>
-							<li>
-								<a href="/">Our Coffee</a>
-							</li>
-							<li>
-								<a href="/">Stories and News</a>
-							</li>
-							<li>
-								<a href="/">Investor Relations</a>
-							</li>
-							<li>
-								<a href="/">Policies and Standards</a>
-							</li>
-							<li>
-								<a href="/">Customer Service</a>
-							</li>
-						</ul>
+						{showAbout && <NavItem items={aboutLinks} />}
 					</div>
 					<div className="careers">
-						<div className="title career-title">
+						<div className="title career-title" onClick={handleShowCareers}>
 							<h3>Careers</h3>
 							<FontAwesomeIcon icon="angle-down" size="2x" className="drop-down" />
 						</div>
-						<ul>
-							<li>
-								<a href="/">Culture and Values</a>
-							</li>
-							<li>
-								<a href="/">Inclusion,Diversity and Equity</a>
-							</li>
-							<li>
-								<a href="/">College Achievement Plan</a>
-							</li>
-							<li>
-								<a href="/">U.S Careers</a>
-							</li>
-							<li>
-								<a href="/">International Careers</a>
-							</li>
-						</ul>
+						{showCareers && <NavItem items={careersLinks} />}
 					</div>
-					<div className="social-impact">
+					<div className="social-impact" onClick={handleShowSocial}>
 						<div className="social-title title">
 							<h3>Social Impact</h3>
 							<FontAwesomeIcon icon="angle-down" size="2x" className="drop-down" />
 						</div>
-
-						<ul>
-							<li>
-								<a href="/">Ethical Sourcing</a>
-							</li>
-							<li>
-								<a href="/">Leading in Sustainabilty</a>
-							</li>
-							<li>
-								<a href="/">Strengthening Communities</a>
-							</li>
-							<li>
-								<a href="/">Creating Opportunities</a>
-							</li>
-							<li>
-								<a href="/">Global Social Impact Report</a>
-							</li>
-						</ul>
+						{showSocial && <NavItem items={socialImpactLinks} />}
 					</div>
-					<div className="partners">
+					<div className="partners" onClick={handleShowPartners}>
 						<div className="title">
 							<h3>For Business Partners</h3>
 							<FontAwesomeIcon icon="angle-down" size="2x" className="drop-down" />
 						</div>
-
-						<ul>
-							<li>
-								<a href="/">Landlord Support Center</a>
-							</li>
-							<li>
-								<a href="/">Suppliers</a>
-							</li>
-							<li>
-								<a href="/">Corporate Gift Card Sales</a>
-							</li>
-							<li>
-								<a href="/">Office and Foodservice Coffee</a>
-							</li>
-						</ul>
+						{showPartners && <NavItem items={partnersLinks} />}
 					</div>
-					<div className="order-pickup">
+					<div className="order-pickup" onClick={handleShowOrder}>
 						<div className="order title">
 							<h3>Order and Pickup</h3>
 							<FontAwesomeIcon icon="angle-down" size="2x" className="drop-down" />
 						</div>
-
-						<ul>
-							<li>
-								<a href="/">Order on the App</a>
-							</li>
-							<li>
-								<a href="/">Order on the Web</a>
-							</li>
-							<li>
-								<a href="/">Delivery</a>
-							</li>
-							<li>
-								<a href="/">Order and Pickup Options</a>
-							</li>
-							<li>
-								<a href="/">Explore and Find Coffee for Home</a>
-							</li>
-						</ul>
+						{showOrder && <NavItem items={orderAndPickLinks} />}
 					</div>
 				</div>
 			</div>
@@ -148,23 +135,9 @@ const Footer = () => {
 			</div>
 
 			<div className="privacy-and-terms">
-				<ul className="container">
-					<li>
-						<a href="/">Privacy Policy</a>
-					</li>
-					<li>
-						<a href="/">Terms of Use</a>
-					</li>
-					<li>
-						<a href="/">CA Supply Chain Act</a>
-					</li>
-					<li>
-						<a href="/">Submit Your Idea</a>
-					</li>
-					<li>
-						<a href="/">Cookie Preferences</a>
-					</li>
-				</ul>
+				<div className="container">
+					<NavItem items={privacyAndTermsLink} />
+				</div>
 			</div>
 			<div className="copy-right ">
 				<p className="container">

@@ -21,6 +21,27 @@ footer {
 			& > div {
 				cursor: pointer;
 			}
+
+			.title {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.footer-drop-down {
+				> :first-child {
+					margin-top: 2rem;
+				}
+				li {
+					margin-top: 1.5rem;
+				}
+				a {
+					color: $soft-black;
+				}
+				a:hover {
+					color: black;
+				}
+			}
 		}
 	}
 	.social-media {
@@ -64,10 +85,4 @@ footer {
 			color: $soft-black;
 		}
 	}
-}
-
-.title {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }

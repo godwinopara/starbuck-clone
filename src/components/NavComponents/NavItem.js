@@ -1,10 +1,10 @@
-const NavItem = ({ items }) => {
+const NavItem = ({ items, className }) => {
 	const links = items.map((item, index) => (
 		<li key={index}>
 			<a href={`/${item.toLowerCase()}`}>{item}</a>
 		</li>
 	));
-	return <ul>{links}</ul>;
+	return <ul className={className}>{links}</ul>;
 };
 
 export default NavItem;

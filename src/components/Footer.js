@@ -80,35 +80,43 @@ const Footer = () => {
 							<h3>About Us</h3>
 							<FontAwesomeIcon icon="angle-down" size="2x" className="drop-down" />
 						</div>
-						{showAbout && <NavItem items={aboutLinks} />}
+						{showAbout && <NavItem items={aboutLinks} className="footer-drop-down" />}
 					</div>
 					<div className="careers">
 						<div className="title career-title" onClick={handleShowCareers}>
 							<h3>Careers</h3>
 							<FontAwesomeIcon icon="angle-down" size="2x" className="drop-down" />
 						</div>
-						{showCareers && <NavItem items={careersLinks} />}
+						{showCareers && (
+							<NavItem items={careersLinks} className="footer-drop-down" />
+						)}
 					</div>
 					<div className="social-impact" onClick={handleShowSocial}>
 						<div className="social-title title">
 							<h3>Social Impact</h3>
 							<FontAwesomeIcon icon="angle-down" size="2x" className="drop-down" />
 						</div>
-						{showSocial && <NavItem items={socialImpactLinks} />}
+						{showSocial && (
+							<NavItem items={socialImpactLinks} className="footer-drop-down" />
+						)}
 					</div>
 					<div className="partners" onClick={handleShowPartners}>
 						<div className="title">
 							<h3>For Business Partners</h3>
 							<FontAwesomeIcon icon="angle-down" size="2x" className="drop-down" />
 						</div>
-						{showPartners && <NavItem items={partnersLinks} />}
+						{showPartners && (
+							<NavItem items={partnersLinks} className="footer-drop-down" />
+						)}
 					</div>
 					<div className="order-pickup" onClick={handleShowOrder}>
 						<div className="order title">
 							<h3>Order and Pickup</h3>
 							<FontAwesomeIcon icon="angle-down" size="2x" className="drop-down" />
 						</div>
-						{showOrder && <NavItem items={orderAndPickLinks} />}
+						{showOrder && (
+							<NavItem items={orderAndPickLinks} className="footer-drop-down" />
+						)}
 					</div>
 				</div>
 			</div>

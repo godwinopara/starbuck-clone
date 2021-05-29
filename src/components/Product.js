@@ -1,8 +1,10 @@
 const Product = ({ products }) => {
-	const allProducts = products.map((product) => {
+	const allProducts = products.map((product, index) => {
 		return (
-			<section key={product.id}>
-				<img src={product.imgUrl} alt={product.imgDetails} />
+			<section key={product.id} className={`product${index + 1}`}>
+				<div className="product-img">
+					<img src={product.imgUrl} alt={product.imgDetails} />
+				</div>
 
 				<div id={product.className} className="product">
 					<h2>{product.productHeader}</h2>

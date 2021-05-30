@@ -68,13 +68,6 @@
 				width: 95%;
 			}
 		}
-		#product5 {
-			.product-details {
-				button {
-					margin-bottom: 2.5rem;
-				}
-			}
-		}
 
 		button {
 			background: transparent;
@@ -205,6 +198,14 @@
 			grid-template-columns: repeat(2, 1fr);
 			column-gap: 2rem;
 			text-align: center;
+
+			#product5 {
+				.product-details {
+					button {
+						margin-bottom: 1rem;
+					}
+				}
+			}
 		}
 
 		.drinks {

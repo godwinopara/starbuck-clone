@@ -1,28 +1,41 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import starBuckIcon from "../NavComponents/navImage/starbuck-logo.svg";
-import Hamburger from "../NavComponents/Hamburger";
-import MobileViewNav from "./MobileNav";
+// import Hamburger from "../NavComponents/Hamburger";
+import NavItem from "./NavItem";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
-	const [openNav, setopenNav] = useState(false);
+	// const [openNav, setopenNav] = useState(false);
 
-	const starBuckLogoSize = {
-		height: 32,
-	};
+	const leftSideNav = ["MENU", "REWARDS", "GIFT CARDS"];
+	const findStoreNav = ["Find a Store"];
+	const signInNav = ["Sign in", "Join Now"];
 
-	const handleOpenNav = () => {
-		openNav ? setopenNav(false) : setopenNav(true);
-	};
+	// const handleOpenNav = () => {
+	// 	openNav ? setopenNav(false) : setopenNav(true);
+	// };
 
 	return (
 		<nav>
 			<div className="nav-container container">
 				<a className="logo" href="/">
-					<img style={starBuckLogoSize} src={starBuckIcon} alt="" />
+					<img src={starBuckIcon} alt="starbuck logo" />
 				</a>
-
-				<Hamburger handleClick={handleOpenNav} />
-				{openNav && <MobileViewNav />}
+				<div className="nav-links">
+					<div className="left-side-nav">
+						<NavItem items={leftSideNav} />
+					</div>
+					<div className="right-side-nav">
+						<div className="location">
+							<FontAwesomeIcon icon={faMapMarkerAlt} className="location-marker" />
+							<NavItem items={findStoreNav} />
+						</div>
+						<div className="signup">
+							<NavItem items={signInNav} />
+						</div>
+					</div>
+				</div>
 			</div>
 		</nav>
 	);

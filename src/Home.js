@@ -14,9 +14,18 @@ const Home = () => {
 			</header>
 			<main>
 				<div className="products-container">
-					<Product products={products} />
+					<div className="drinks">
+						<Product products={products.drinks} />
+					</div>
+					<div className="delivery">
+						<Product products={products.delivery} />
+					</div>
+					<div className="giftcard">
+						<Product products={products.giftcards} />
+					</div>
 				</div>
-				<div className="items-container">
+
+				<div className="terms-container">
 					<Terms information={informations} />
 				</div>
 			</main>

@@ -1,8 +1,9 @@
 $light-gray: #f2f0eb;
 $soft-black: rgba(0, 0, 0, 0.56);
+$header-color: #1e3932;
 
 footer {
-	.footer-container {
+	.footer-links-container {
 		padding: 2rem 0;
 		margin: 1rem auto;
 		border-top: 1px solid $light-gray;
@@ -20,6 +21,10 @@ footer {
 		.footer-links {
 			& > div {
 				cursor: pointer;
+			}
+
+			h3 {
+				font-weight: 500;
 			}
 
 			.title {
@@ -83,6 +88,55 @@ footer {
 		margin: 1rem 0 2rem;
 		p {
 			color: $soft-black;
+		}
+	}
+}
+
+@media screen and (min-width: 1040px) {
+	footer {
+		.footer-links-container {
+			.footer-links {
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-start;
+				margin: auto;
+
+				& > div {
+					width: 100%;
+				}
+
+				.title {
+					display: block;
+				}
+
+				div {
+					margin: 0;
+				}
+
+				.drop-down {
+					display: none;
+				}
+
+				.footer-drop-down {
+					width: 85%;
+				}
+			}
+		}
+
+		.privacy-and-terms {
+			ul {
+				display: flex;
+				align-items: flex-start;
+
+				li + li {
+					margin-top: 0;
+					margin-left: 1rem;
+				}
+				li {
+					border-right: 2px solid $soft-black;
+					padding-right: 1.5rem;
+				}
+			}
 		}
 	}
 }

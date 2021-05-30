@@ -2,10 +2,10 @@ import starbuckStarImg from "../images/landing-page-images/starbuck-star.webp";
 import threeFracuccino from "../images/landing-page-images/three-fracuccions.webp";
 import oneFracuccinoImage from "../images/landing-page-images/fracuccino-drink.webp";
 import starbuckPickupImg from "../images/landing-page-images/starbuck-pickup.webp";
-import starbuckCoffeeShop from "../images/landing-page-images/starbuck-shop.webp";
+import uberEat from "../images/landing-page-images/uber-eat.jpg";
 import starbuckGiftCard from "../images/landing-page-images/gift-cards.webp";
 
-const products = [
+const drinks = [
 	{
 		id: 1,
 		className: "product1",
@@ -35,6 +35,9 @@ const products = [
 		imgUrl: oneFracuccinoImage,
 		imgDetails: "one fracuccino drink",
 	},
+];
+
+const delivery = [
 	{
 		id: 4,
 		className: "product4",
@@ -52,9 +55,12 @@ const products = [
 		productDetails:
 			"Enjoy $0 Delivery Fee on Starbucks orders over $20 on UberEats through May 31.**",
 		buttonName: "Order now",
-		imgUrl: starbuckCoffeeShop,
+		imgUrl: uberEat,
 		imgDetails: "starbuck coffee shop",
 	},
+];
+
+const giftcards = [
 	{
 		id: 6,
 		className: "product6",
@@ -66,5 +72,5 @@ const products = [
 		imgDetails: "starbuck giftcards",
 	},
 ];
-
+const products = { drinks, delivery, giftcards };
 export default products;

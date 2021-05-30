@@ -1,12 +1,93 @@
 .products-container {
-	display: grid;
-	grid-template-columns: 1fr;
-	row-gap: 2rem;
-	text-align: center;
+	button {
+		cursor: pointer;
+	}
+	.drinks,
+	.giftcard {
+		display: grid;
+		grid-template-columns: 1fr;
+		row-gap: 2rem;
+		text-align: center;
+
+		.product {
+			h2 {
+				font-size: 1.9rem;
+			}
+			p {
+				font-weight: 400;
+				color: $header-color;
+			}
+			font-size: 1.3rem;
+		}
+	}
+
+	.drinks {
+		#product1 {
+			background: #f1f8f6;
+			h2 {
+				font-weight: 400;
+				font-size: 1.5rem;
+			}
+			button {
+				background: transparent;
+				cursor: pointer;
+			}
+		}
+
+		.product2,
+		.product3 {
+			h2 {
+				letter-spacing: 4px;
+			}
+		}
+	}
+
+	.giftcard {
+		h2 {
+			font-weight: 400;
+			font-size: 0.1rem;
+			letter-spacing: 4px;
+		}
+	}
+
+	.delivery {
+		display: grid;
+		grid-template-columns: 1fr;
+		row-gap: 2rem;
+		margin: 2rem 0;
+		text-align: center;
+
+		h2 {
+			font-weight: 400;
+		}
+
+		.product {
+			background-color: #d4e9e4;
+
+			p {
+				width: 95%;
+			}
+		}
+		#product5 {
+			.product-details {
+				button {
+					margin-bottom: 2.5rem;
+				}
+			}
+		}
+
+		button {
+			background: transparent;
+		}
+	}
 }
 
 .product {
 	background: #f2f0eb;
+
+	.products-details {
+		width: 50%;
+	}
 
 	h2 {
 		padding: 2rem 0 1rem;
@@ -22,9 +103,11 @@
 		border-radius: 10rem;
 		border: 1px solid rgb(141, 141, 141);
 		outline: none;
+		font-size: 0.9rem;
+		font-weight: 600;
 	}
 }
-.items-container {
+.terms-container {
 	.item {
 		margin: 5rem auto;
 		text-align: center;
@@ -33,43 +116,112 @@
 
 @media screen and (min-width: 790px) {
 	.products-container {
-		.product1,
-		.product2,
-		.product3,
-		.product6 {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
+		.product {
+			.product-details {
+				width: 70%;
+			}
+		}
 
-			.product {
-				width: 100%;
-				height: 100%;
+		.drinks {
+			.product1,
+			.product2,
+			.product3 {
 				display: flex;
-				justify-content: center;
-				flex-direction: column;
 				align-items: center;
+				justify-content: center;
+				text-align: center;
+
+				.product {
+					width: 100%;
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					align-items: center;
+				}
+				.product-img {
+					width: 100%;
+				}
 			}
-			.product-img {
-				width: 100%;
+			.product1,
+			.product3 {
+				.product {
+					order: 1;
+				}
+				.product-img {
+					order: 2;
+				}
+			}
+			.product2 {
+				.product {
+					order: 2;
+				}
+				.product-img {
+					order: 1;
+				}
 			}
 		}
-		.product1,
-		.product3,
-		.product6 {
-			.product {
-				order: 1;
-			}
-			.product-img {
-				order: 2;
+
+		.giftcard {
+			.product1 {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+
+				.product {
+					width: 100%;
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					align-items: center;
+					order: 1;
+				}
+				.product-img {
+					width: 100%;
+					order: 2;
+				}
 			}
 		}
-		.product2 {
-			.product {
-				order: 2;
+
+		.delivery {
+			.product-details {
+				margin: auto;
 			}
-			.product-img {
-				order: 1;
+		}
+	}
+
+	.terms-container {
+		.item {
+			width: 50%;
+		}
+	}
+}
+
+@media screen and (min-width: 1040px) {
+	.products-container {
+		.delivery {
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: 2rem;
+			text-align: center;
+		}
+
+		.drinks {
+			.product {
+				h2 {
+					font-size: 3rem;
+					font-weight: 700;
+				}
+			}
+		}
+
+		.giftcard {
+			.product {
+				h2 {
+					font-size: 1.5rem;
+					font-weight: 400;
+				}
 			}
 		}
 	}

@@ -1,28 +1,27 @@
-// import React, { useState } from "react";
+import React, { useState } from "react";
 import starBuckIcon from "../NavComponents/navImage/starbuck-logo.svg";
-// import Hamburger from "../NavComponents/Hamburger";
+import Hamburger from "../NavComponents/Hamburger";
 import NavItem from "./NavItem";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
-	// const [openNav, setopenNav] = useState(false);
+	const [openNav, setopenNav] = useState(false);
 
 	const leftSideNav = ["MENU", "REWARDS", "GIFT CARDS"];
 	const findStoreNav = ["Find a Store"];
 	const signInNav = ["Sign in", "Join Now"];
 
-	// const handleOpenNav = () => {
-	// 	openNav ? setopenNav(false) : setopenNav(true);
-	// };
-
+	const handleOpenNav = () => {
+		openNav ? setopenNav(false) : setopenNav(true);
+	};
 	return (
 		<nav>
 			<div className="nav-container container">
 				<a className="logo" href="/">
 					<img src={starBuckIcon} alt="starbuck logo" />
 				</a>
-				<div className="nav-links">
+				<div className={`nav-links ${openNav ? "show-nav" : ""}`}>
 					<div className="left-side-nav">
 						<NavItem items={leftSideNav} />
 					</div>
@@ -36,6 +35,7 @@ const NavBar = () => {
 						</div>
 					</div>
 				</div>
+				<Hamburger handleClick={handleOpenNav} />
 			</div>
 		</nav>
 	);

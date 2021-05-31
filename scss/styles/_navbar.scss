@@ -91,6 +91,13 @@ nav {
 
 @media screen and (max-width: 790px) {
 	.nav-container {
+		.logo {
+			img {
+				height: 35px;
+				width: 50px;
+			}
+		}
+
 		.nav-links {
 			width: 80%;
 			display: block;
@@ -100,6 +107,8 @@ nav {
 			height: 100vh;
 			padding: 2rem 2rem;
 			background-color: white;
+			transform: translate(120%, -3%);
+			transition: 0.5s ease-in;
 			.left-side-nav {
 				border-bottom: 2px solid $light-gray;
 				margin-left: 0;
@@ -137,6 +146,11 @@ nav {
 					}
 				}
 			}
+		}
+
+		.show-nav {
+			transform: translate(0, -3%);
+			transition: 0.5s ease-in-out;
 		}
 	}
 }

@@ -1,46 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import NavItem from "./NavComponents/NavItem";
 import React from "react";
+import FooterLink from "./footerComponent/FooterLink";
 
 const Footer = () => {
-	const aboutLinks = [
-		"Our Heritage",
-		"Our Coffee",
-		"Stories and News",
-		"Investor Relations",
-		"Policies and Standard",
-		"Customer Service",
-	];
-	const careersLinks = [
-		"Culture and Values",
-		"Inclusion, Diversity and Equity",
-		"College Achievement Plan",
-		"U.S Careers",
-		"International Careers",
-	];
-
-	const socialImpactLinks = [
-		"Ethical Sourcing",
-		"Leading in Sustainablity",
-		"Strengthening Communities",
-		"Creating Opportunities",
-		"Global Social Impact Report",
-	];
-
-	const partnersLinks = [
-		"Landlord Support Center",
-		"Suppliers",
-		"Corporate Gift Card Sales",
-		"Office and Foodservice Coffee",
-	];
-	const orderAndPickLinks = [
-		"Order on the App",
-		"Order on the Web",
-		"Delivery",
-		"Order and Pickup Options",
-		"Explore and Find Coffe for Home",
-	];
-
 	const privacyAndTermsLink = [
 		"Privacy Policy",
 		"Terms of Use",
@@ -49,49 +12,64 @@ const Footer = () => {
 		"Cookie Preferences",
 	];
 
+	const footerLinks = [
+		{
+			title: "About Us",
+			links: [
+				"Our Heritage",
+				"Our Coffee",
+				"Stories and News",
+				"Investor Relations",
+				"Policies and Standard",
+				"Customer Service",
+			],
+		},
+		{
+			title: "Careers",
+			links: [
+				"Culture and Values",
+				"Inclusion, Diversity and Equity",
+				"College Achievement Plan",
+				"U.S Careers",
+				"International Careers",
+			],
+		},
+		{
+			title: "Social Impact",
+			links: [
+				"Ethical Sourcing",
+				"Leading in Sustainablity",
+				"Strengthening Communities",
+				"Creating Opportunities",
+				"Global Social Impact Report",
+			],
+		},
+		{
+			title: "For Business Partners",
+			links: [
+				"Landlord Support Center",
+				"Suppliers",
+				"Corporate Gift Card Sales",
+				"Office and Foodservice Coffee",
+			],
+		},
+		{
+			title: "Order and Pickup",
+			links: [
+				"Order on the App",
+				"Order on the Web",
+				"Delivery",
+				"Order and Pickup Options",
+				"Explore and Find Coffe for Home",
+			],
+		},
+	];
+
 	return (
 		<footer>
 			<div className="footer-links-container ">
 				<div className="footer-links container">
-					<div className="about">
-						<div className="about-title title">
-							<h3>About Us</h3>
-							<FontAwesomeIcon icon="angle-down" size="2x" className="drop-down" />
-						</div>
-						<NavItem items={aboutLinks} className="footer-drop-down" />
-					</div>
-					<div className="careers">
-						<div className="title career-title">
-							<h3>Careers</h3>
-							<FontAwesomeIcon icon="angle-down" size="2x" className="drop-down" />
-						</div>
-
-						<NavItem items={careersLinks} className="footer-drop-down" />
-					</div>
-					<div className="social-impact">
-						<div className="social-title title">
-							<h3>Social Impact</h3>
-							<FontAwesomeIcon icon="angle-down" size="2x" className="drop-down" />
-						</div>
-
-						<NavItem items={socialImpactLinks} className="footer-drop-down" />
-					</div>
-					<div className="partners">
-						<div className="title">
-							<h3>For Business Partners</h3>
-							<FontAwesomeIcon icon="angle-down" size="2x" className="drop-down" />
-						</div>
-
-						<NavItem items={partnersLinks} className="footer-drop-down" />
-					</div>
-					<div className="order-pickup">
-						<div className="order title">
-							<h3>Order and Pickup</h3>
-							<FontAwesomeIcon icon="angle-down" size="2x" className="drop-down" />
-						</div>
-
-						<NavItem items={orderAndPickLinks} className="footer-drop-down" />
-					</div>
+					<FooterLink items={footerLinks} />
 				</div>
 			</div>
 

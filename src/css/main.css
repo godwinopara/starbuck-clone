@@ -46,6 +46,10 @@ footer .footer-links-container .footer-links .footer-drop-down a:hover {
   color: black;
 }
 
+footer .footer-links-container .footer-links .show-footer-drop-down {
+  display: block;
+}
+
 footer .social-media {
   display: flex;
 }
@@ -108,6 +112,7 @@ footer .copy-right p {
     display: none;
   }
   footer .footer-links-container .footer-links .footer-drop-down {
+    display: block;
     width: 85%;
   }
   footer .privacy-and-terms ul {
@@ -223,6 +228,10 @@ nav {
 }
 
 @media screen and (max-width: 790px) {
+  .nav-container .logo img {
+    height: 35px;
+    width: 50px;
+  }
   .nav-container .nav-links {
     width: 80%;
     display: block;
@@ -232,6 +241,8 @@ nav {
     height: 100vh;
     padding: 2rem 2rem;
     background-color: white;
+    transform: translate(120%, -3%);
+    transition: 0.5s ease-in;
   }
   .nav-container .nav-links .left-side-nav {
     border-bottom: 2px solid #f2f0eb;
@@ -263,32 +274,32 @@ nav {
   .nav-container .nav-links .right-side-nav .signup ul li + li {
     margin-left: 1rem;
   }
+  .nav-container .show-nav {
+    transform: translate(0, -3%);
+    transition: 0.5s ease-in-out;
+  }
 }
 
 .products-container button {
   cursor: pointer;
 }
 
-.products-container .drinks,
-.products-container .giftcard {
+.products-container .drinks {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 2rem;
   text-align: center;
 }
 
-.products-container .drinks .product,
-.products-container .giftcard .product {
+.products-container .drinks .product {
   font-size: 1.3rem;
 }
 
-.products-container .drinks .product h2,
-.products-container .giftcard .product h2 {
+.products-container .drinks .product h2 {
   font-size: 1.9rem;
 }
 
-.products-container .drinks .product p,
-.products-container .giftcard .product p {
+.products-container .drinks .product p {
   font-weight: 400;
   color: #1e3932;
 }
@@ -312,10 +323,23 @@ nav {
   letter-spacing: 4px;
 }
 
+.products-container .giftcard {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+  text-align: center;
+}
+
 .products-container .giftcard h2 {
   font-weight: 400;
-  font-size: 0.1rem;
-  letter-spacing: 4px;
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+}
+
+.products-container .giftcard p {
+  font-weight: 400;
+  color: #1e3932;
+  font-size: 1rem;
 }
 
 .products-container .delivery {
@@ -336,6 +360,7 @@ nav {
 
 .products-container .delivery .product p {
   width: 95%;
+  font-size: 1rem;
 }
 
 .products-container .delivery button {
@@ -507,6 +532,10 @@ footer .footer-links-container .footer-links .footer-drop-down a:hover {
   color: black;
 }
 
+footer .footer-links-container .footer-links .show-footer-drop-down {
+  display: block;
+}
+
 footer .social-media {
   display: flex;
 }
@@ -569,6 +598,7 @@ footer .copy-right p {
     display: none;
   }
   footer .footer-links-container .footer-links .footer-drop-down {
+    display: block;
     width: 85%;
   }
   footer .privacy-and-terms ul {
@@ -582,6 +612,22 @@ footer .copy-right p {
   footer .privacy-and-terms ul li {
     border-right: 2px solid rgba(0, 0, 0, 0.56);
     padding-right: 1.5rem;
+  }
+}
+
+.hamburger-menu .hamburger {
+  background-color: black;
+  height: 2px;
+  width: 30px;
+}
+
+.hamburger-menu .hamburger + .hamburger {
+  margin-top: 0.3rem;
+}
+
+@media screen and (min-width: 790px) {
+  .hamburger-menu {
+    display: none;
   }
 }
 
@@ -611,7 +657,7 @@ li {
 }
 
 .container {
-  width: 95%;
+  width: 94%;
   margin: 0 auto;
 }
 

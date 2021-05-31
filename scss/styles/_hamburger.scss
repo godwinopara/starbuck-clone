@@ -1,0 +1,17 @@
+.hamburger-menu {
+	.hamburger {
+		background-color: black;
+		height: 2px;
+		width: 30px;
+	}
+
+	.hamburger + .hamburger {
+		margin-top: 0.3rem;
+	}
+}
+
+@media screen and (min-width: 790px) {
+	.hamburger-menu {
+		display: none;
+	}
+}

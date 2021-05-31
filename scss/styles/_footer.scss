@@ -1,7 +1,4 @@
-$light-gray: #f2f0eb;
-$soft-black: rgba(0, 0, 0, 0.56);
-$header-color: #1e3932;
-
+@import "_default";
 footer {
 	.footer-links-container {
 		padding: 2rem 0;
@@ -46,6 +43,10 @@ footer {
 				a:hover {
 					color: black;
 				}
+			}
+
+			.show-footer-drop-down {
+				display: block;
 			}
 		}
 	}
@@ -118,6 +119,7 @@ footer {
 				}
 
 				.footer-drop-down {
+					display: block;
 					width: 85%;
 				}
 			}

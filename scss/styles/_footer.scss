@@ -7,46 +7,72 @@ footer {
 		border-bottom: 1px solid $light-gray;
 		border-width: 3px;
 
-		div + div {
-			margin-top: 2rem;
-		}
 		.drop-down {
 			opacity: 1;
 			color: rgb(146, 145, 145);
 		}
 
 		.footer-links {
-			& > div {
-				cursor: pointer;
+			.title {
+				display: flex;
+				align-items: center;
+			}
+
+			.icon {
+				font-size: 1.5rem;
+				font-weight: 600;
+				color: black;
+				transition: 0.5s ease-in-out;
+			}
+
+			.rotate {
+				transition: 0.5s ease-in-out;
+				transform: rotate(180deg);
 			}
 
 			h3 {
 				font-weight: 500;
+				font-size: 1rem;
+				letter-spacing: 0.1px;
+				z-index: 1000;
 			}
 
 			.title {
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
+				padding: 1rem 0;
 			}
+			.close-accodion {
+				transform: translate3d(0, -25%, 0);
+				transition: 0.2s ease-in-out;
 
-			.footer-drop-down {
-				> :first-child {
-					margin-top: 2rem;
+				ul,
+				li,
+				a {
+					margin: 0;
+					padding: 0;
+					font-size: 0;
 				}
+			}
+			.open-accodion {
+				margin: 1rem 0;
+				transition: 0.5s ease-in-out;
+				ul,
+				li,
+				a {
+					font-size: inherit;
+				}
+
 				li {
 					margin-top: 1.5rem;
 				}
-				a {
-					color: $soft-black;
-				}
-				a:hover {
-					color: black;
-				}
 			}
-
-			.show-footer-drop-down {
-				display: block;
+			.accodian {
+				cursor: pointer;
+			}
+			.accodian + .accodian {
+				margin: 1rem 0;
 			}
 		}
 	}
@@ -102,25 +128,34 @@ footer {
 				align-items: flex-start;
 				margin: auto;
 
-				& > div {
-					width: 100%;
+				h3 {
+					font-size: 1.2rem;
 				}
 
-				.title {
-					display: block;
+				& > div {
+					width: 100%;
 				}
 
 				div {
 					margin: 0;
 				}
 
-				.drop-down {
-					display: none;
-				}
-
 				.footer-drop-down {
-					display: block;
 					width: 85%;
+
+					> :first-child {
+						margin-top: 1.5rem;
+						cursor: pointer;
+					}
+					li {
+						margin-top: 1rem;
+					}
+					a {
+						color: $soft-black;
+					}
+					a:hover {
+						color: black;
+					}
 				}
 			}
 		}

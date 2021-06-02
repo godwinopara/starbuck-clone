@@ -1,9 +1,9 @@
-import starbuckStarImg from "../images/landing-page-images/starbuck-star.webp";
-import threeFracuccino from "../images/landing-page-images/three-fracuccions.webp";
-import oneFracuccinoImage from "../images/landing-page-images/fracuccino-drink.webp";
-import starbuckPickupImg from "../images/landing-page-images/starbuck-pickup.webp";
-import uberEat from "../images/landing-page-images/uber-eat.jpg";
-import starbuckGiftCard from "../images/landing-page-images/gift-cards.webp";
+import starbuckStarImg from "./home-images/starbuck-star.webp";
+import threeFracuccino from "./home-images/three-fracuccions.webp";
+import oneFracuccinoImage from "./home-images/fracuccino-drink.webp";
+import starbuckPickupImg from "./home-images/starbuck-pickup.webp";
+import uberEat from "./home-images/uber-eat.jpg";
+import starbuckGiftCard from "./home-images/gift-cards.webp";
 
 const drinks = [
 	{

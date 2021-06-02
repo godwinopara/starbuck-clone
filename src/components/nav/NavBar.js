@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import starBuckIcon from "../NavComponents/navImage/starbuck-logo.svg";
-import Hamburger from "../NavComponents/Hamburger";
+import starBuckIcon from "../nav/navImage/starbuck-logo.svg";
+
+import Hamburger from "../nav/Hamburger";
 import NavItem from "./NavItem";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";

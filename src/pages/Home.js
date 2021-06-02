@@ -3,15 +3,10 @@ import products from "../components/home/products";
 import Product from "../components/home/Product";
 import Terms from "../components/home/Terms";
 import informations from "../components/home/termsText";
-import NavBar from "../components/nav/NavBar";
-import Footer from "../components/footer/Footer";
 
 const Home = () => {
 	return (
 		<>
-			<header>
-				<NavBar />
-			</header>
 			<main>
 				<div className="products-container">
 					<div className="drinks">
@@ -29,7 +24,6 @@ const Home = () => {
 					<Terms information={informations} />
 				</div>
 			</main>
-			<Footer />
 		</>
 	);
 };

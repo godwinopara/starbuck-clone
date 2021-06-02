@@ -1,5 +1,5 @@
 import { BsChevronDown } from "react-icons/bs";
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 
 const FooterItem = ({ item }) => {
 	const [show, setShow] = useState(false);

@@ -6,8 +6,6 @@ const FooterAccodion = () => {
 	const [viewportWidth, setviewportWidth] = useState(window.innerWidth);
 	const breakPoint = 1040;
 
-	console.log(viewportWidth);
-
 	useEffect(() => {
 		const handleWindowSize = () => setviewportWidth(window.innerWidth);
 		window.addEventListener("resize", handleWindowSize);

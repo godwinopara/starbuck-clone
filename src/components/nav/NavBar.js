@@ -1,17 +1,13 @@
 import React, { useState } from "react";
 import starBuckIcon from "../nav/navImage/starbuck-logo.svg";
-
 import Hamburger from "../nav/Hamburger";
 import NavItem from "./NavItem";
+import NavContent from "./NavContent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
 	const [openNav, setopenNav] = useState(false);
-
-	const leftSideNav = ["MENU", "REWARDS", "GIFT CARDS"];
-	const findStoreNav = ["Find a Store"];
-	const signInNav = ["Sign in", "Join Now"];
 
 	const handleOpenNav = () => {
 		openNav ? setopenNav(false) : setopenNav(true);
@@ -24,15 +20,15 @@ const NavBar = () => {
 				</a>
 				<div className={`nav-links ${openNav ? "show-nav" : ""}`}>
 					<div className="left-side-nav">
-						<NavItem items={leftSideNav} />
+						<NavItem items={NavContent.leftSideLink} />
 					</div>
 					<div className="right-side-nav">
 						<div className="location">
 							<FontAwesomeIcon icon={faMapMarkerAlt} className="location-marker" />
-							<NavItem items={findStoreNav} />
+							<NavItem items={NavContent.findStore} />
 						</div>
 						<div className="signup">
-							<NavItem items={signInNav} />
+							<NavItem items={NavContent.signInLink} />
 						</div>
 					</div>
 				</div>

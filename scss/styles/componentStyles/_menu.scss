@@ -1,4 +1,8 @@
 @import "../reuseAbleStyles/default";
+.menu-container {
+	max-width: 1045px;
+	margin: 0 auto;
+}
 .menu-header {
 	position: relative;
 	.menu::before {
@@ -17,7 +21,7 @@
 	font-size: 0.8rem;
 
 	.active {
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid $soft-black;
 		padding-bottom: 3px;
 	}
 
@@ -25,7 +29,46 @@
 		margin-left: 2.5rem;
 	}
 }
-.menu-container {
-	max-width: 1045px;
-	margin: 0 auto;
+
+.menu-content-container {
+	.menu-heading {
+		h1 {
+			font-size: 1.8rem;
+			font-weight: 700;
+			margin: 2rem 0;
+		}
+	}
+	.product-title {
+		border-bottom: 0.1rem solid $light-gray;
+		margin: 2rem 0;
+		padding-bottom: 0.5rem;
+
+		h3 {
+			font-size: 1.5rem;
+			font-weight: 600;
+		}
+	}
+	img {
+		max-width: 112px;
+	}
+
+	.products {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+
+		figure {
+			display: flex;
+			align-items: center;
+			margin-bottom: 2rem;
+			img {
+				border-radius: 100%;
+				margin-right: 1rem;
+			}
+
+			figcaption {
+				font-size: 1.2rem;
+				font-weight: 500;
+			}
+		}
+	}
 }

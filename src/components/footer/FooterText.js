@@ -69,11 +69,11 @@ const footerTexts = [
 	},
 ];
 const privacyLink = [
-	"Privacy Policy",
-	"Terms of Use",
-	"CA Supply Chain Act",
-	"Submit Your Idea",
-	"Cookie Preferences",
+	{ path: "privacy-policy", name: "Privacy Policy" },
+	{ path: "terms-of-use", name: "Terms Of Use" },
+	{ path: "supply-chain", name: "CA Supply Chain Act" },
+	{ path: "idea", name: "Submit Your Idea" },
+	{ path: "cookies", name: "Cookie Preferences" },
 ];
 
 const footerItems = { footerTexts, privacyLink };

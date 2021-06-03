@@ -707,6 +707,13 @@ footer .copy-right p {
   }
 }
 
+.menu-main-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
 .menu-container {
   max-width: 1045px;
   margin: 0 auto;
@@ -743,7 +750,6 @@ footer .copy-right p {
 .menu-content-container .menu-heading h1 {
   font-size: 1.8rem;
   font-weight: 700;
-  margin: 2rem 0;
 }
 
 .menu-content-container .product-title {
@@ -780,6 +786,39 @@ footer .copy-right p {
 .menu-content-container .products figure figcaption {
   font-size: 1.2rem;
   font-weight: 500;
+}
+
+.aside-container .aside + .aside {
+  margin-top: 1rem;
+}
+
+.aside-container .aside li + li {
+  margin-top: 1rem;
+}
+
+.aside-container .aside li {
+  font-size: 1rem;
+}
+
+.aside-container .aside li a {
+  color: rgba(0, 0, 0, 0.56);
+}
+
+.aside-container h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 1020px) {
+  aside {
+    display: none;
+  }
+  .menu-main-container {
+    justify-content: center;
+  }
+  .menu-container {
+    width: 75%;
+  }
 }
 
 *,

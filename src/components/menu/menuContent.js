@@ -46,6 +46,34 @@ const merchandise = [
 	{ productName: "Water Bottles", imgUrl: WaterBottle },
 	{ productName: "Other", imgUrl: StarBuckPack },
 ];
-const content = { drinks, foods, homeCoffee, merchandise };
+
+const aside = [
+	{
+		title: "Drinks",
+		links: [
+			"Hot Coffees",
+			"Hot Teas",
+			"Hot Drinks",
+			"Frappuccino® Blended Beverages",
+			"Cold Coffees",
+			"Iced Teas",
+			"Cold Drinks",
+		],
+	},
+	{
+		title: "Foods",
+		links: ["Hot Breakfast", "Bakery", "Lunch", "Snacks & Sweet", "OatMeal & Yogurt"],
+	},
+	{
+		title: "At Home Coffee",
+		links: ["Whole Bean", "VIA® Instant"],
+	},
+	{
+		title: "Merchandise",
+		links: ["Cold Cup", "Tumbler", "Water Bottles", "Other"],
+	},
+];
+
+const content = { drinks, foods, homeCoffee, merchandise, aside };
 
 export default content;

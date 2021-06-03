@@ -1,4 +1,10 @@
 @import "../reuseAbleStyles/default";
+.menu-main-container {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding-top: 2rem;
+}
 .menu-container {
 	max-width: 1045px;
 	margin: 0 auto;
@@ -8,7 +14,6 @@
 	.menu::before {
 		content: "";
 		position: absolute;
-		// top: 14%;
 		bottom: 0;
 		height: 5px;
 		width: 47px;
@@ -35,7 +40,7 @@
 		h1 {
 			font-size: 1.8rem;
 			font-weight: 700;
-			margin: 2rem 0;
+			// margin: 2rem 0;
 		}
 	}
 	.product-title {
@@ -70,5 +75,41 @@
 				font-weight: 500;
 			}
 		}
+	}
+}
+
+.aside-container {
+	.aside + .aside {
+		margin-top: 1rem;
+	}
+
+	.aside {
+		li + li {
+			margin-top: 1rem;
+		}
+		li {
+			font-size: 1rem;
+			a {
+				color: $soft-black;
+			}
+		}
+	}
+	h4 {
+		font-size: 1.1rem;
+		margin-bottom: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 1020px) {
+	aside {
+		display: none;
+	}
+
+	.menu-main-container {
+		justify-content: center;
+	}
+
+	.menu-container {
+		width: 75%;
 	}
 }

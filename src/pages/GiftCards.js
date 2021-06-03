@@ -1,6 +1,10 @@
+import NavBar from "../components/nav/NavBar";
 const GiftCard = () => {
 	return (
 		<div>
+			<header>
+				<NavBar />
+			</header>
 			<h2>GIFT CARDS</h2>
 			<p>
 				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis cumque non nisi,

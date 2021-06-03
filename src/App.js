@@ -3,7 +3,6 @@ import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import Rewards from "./pages/Rewards";
 import GiftCard from "./pages/GiftCards";
-import NavBar from "./components/nav/NavBar";
 import Footer from "./components/footer/Footer";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -16,9 +15,6 @@ function App() {
 	return (
 		<Router>
 			<div className="App">
-				<header>
-					<NavBar />
-				</header>
 				<Switch>
 					<Route exact path="/">
 						<Home />

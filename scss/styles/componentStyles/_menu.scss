@@ -1,0 +1,11 @@
+@import "../reuseAbleStyles/default";
+.menu-header {
+	.menu::before {
+		content: "";
+		position: absolute;
+		top: 14%;
+		height: 5px;
+		width: 45px;
+		background-color: $green;
+	}
+}

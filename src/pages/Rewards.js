@@ -1,6 +1,10 @@
+import NavBar from "../components/nav/NavBar";
 const Rewards = () => {
 	return (
-		<div className="container">
+		<div className="rewards-container">
+			<header>
+				<NavBar />
+			</header>
 			<h2>REWARDS</h2>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sed explicabo dolorem

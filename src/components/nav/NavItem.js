@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
-const NavItem = ({ items, className }) => {
+const NavItem = ({ items }) => {
 	const links = items.map((item, index) => (
 		<li key={index}>
-			<Link to={`/${item.path}`}>{item.name}</Link>
+			<Link className={item.path} to={`/${item.path}`}>
+				{item.name}
+			</Link>
 		</li>
 	));
-	return <ul className={className}>{links}</ul>;
+	return <ul>{links}</ul>;
 };
 
 export default NavItem;

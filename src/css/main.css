@@ -707,13 +707,37 @@ footer .copy-right p {
   }
 }
 
+.menu-header {
+  position: relative;
+}
+
 .menu-header .menu::before {
   content: "";
   position: absolute;
-  top: 14%;
+  bottom: 0;
   height: 5px;
-  width: 45px;
+  width: 47px;
   background-color: #008248;
+}
+
+.menu-nav-sub-menu {
+  background: #f2f0eb;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+}
+
+.menu-nav-sub-menu .active {
+  border-bottom: 1px solid black;
+  padding-bottom: 3px;
+}
+
+.menu-nav-sub-menu .menu-link + .menu-link {
+  margin-left: 2.5rem;
+}
+
+.menu-container {
+  max-width: 1045px;
+  margin: 0 auto;
 }
 
 *,

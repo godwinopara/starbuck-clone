@@ -1,11 +1,31 @@
 @import "../reuseAbleStyles/default";
 .menu-header {
+	position: relative;
 	.menu::before {
 		content: "";
 		position: absolute;
-		top: 14%;
+		// top: 14%;
+		bottom: 0;
 		height: 5px;
-		width: 45px;
+		width: 47px;
 		background-color: $green;
 	}
+}
+.menu-nav-sub-menu {
+	background: $light-gray;
+	padding: 1rem 0;
+	font-size: 0.8rem;
+
+	.active {
+		border-bottom: 1px solid black;
+		padding-bottom: 3px;
+	}
+
+	.menu-link + .menu-link {
+		margin-left: 2.5rem;
+	}
+}
+.menu-container {
+	max-width: 1045px;
+	margin: 0 auto;
 }

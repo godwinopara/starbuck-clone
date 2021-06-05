@@ -54,13 +54,13 @@ const registerCard = {
 		"Then use it to pay through the app. You can even consolidate balances from multiple cards in one place.",
 	image: paymentMethod4,
 };
-const earnStars = {
+const creditCard = {
 	title: "Earn Stars even faster",
 	details:
 		"Earn Stars on all purchases you make with our credit card opens in new window in and outside of Starbucks. Earn 1 Star per $1 when you digitally preload your Starbucks Card with your Starbucks® Rewards Visa® Card, and earn 2 Stars per $1 when you pay with that preloaded Starbucks Card.",
 	image: paymentMethod5,
 };
 
-const content = { freePackages, scanAndPay, savePayment, preLoad, registerCard, earnStars };
+const content = { freePackages, scanAndPay, savePayment, preLoad, registerCard, creditCard };
 
 export default content;

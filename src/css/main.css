@@ -839,6 +839,10 @@ footer .copy-right p {
   }
 }
 
+.rewards-container input {
+  display: block;
+}
+
 .rewards-container header {
   position: sticky;
   margin-bottom: 0;

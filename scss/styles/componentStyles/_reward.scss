@@ -1,6 +1,9 @@
 @import "../reuseAbleStyles/default";
 
 .rewards-container {
+	input {
+		display: block;
+	}
 	header {
 		position: sticky;
 		margin-bottom: 0;

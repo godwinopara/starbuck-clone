@@ -1,5 +1,7 @@
 import NavBar from "../components/nav/NavBar";
 import ListStar from "../components/reward/ListStar";
+import rewardContent from "../components/reward/rewardContent";
+import ListItems from "../components/reward/ListItems";
 import number1Image from "../images/number1.webp";
 import number2Image from "../images/number2.webp";
 import number3Image from "../images/number3.webp";
@@ -75,6 +77,28 @@ const Rewards = () => {
 						<div className="favorite-total-stars">
 							<ListStar stars={[25, 50, 150, 200, 400]} />
 						</div>
+					</div>
+				</section>
+				<section className="starbuck-extras">
+					<div className="starbuck-extras-heading">
+						<h2>Endless Extras</h2>
+						<p>
+							Joining Starbucks® Rewards means unlocking access to exclusive benefits.
+							Say hello to easy ordering, tasty Rewards and—yes, free coffee.
+						</p>
+					</div>
+					<div className="starbuck-extras-details">
+						<ListItems itemToList={rewardContent.freePackages} />
+					</div>
+				</section>
+				<section className="payment-method">
+					<div className="payment-method-heading">
+						<h2>Cash or card, you earn Stars</h2>
+						<p>
+							No matter how you pay, you can earn Stars with your morning coffee.
+							Those Stars add up to (really delicious) Rewards.
+						</p>
+						<div className="payment-method-details"></div>
 					</div>
 				</section>
 			</main>

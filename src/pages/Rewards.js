@@ -3,7 +3,15 @@ const Rewards = () => {
 	return (
 		<div className="rewards-container">
 			<header>
-				<NavBar />
+				<div className="reward-header-wrapper">
+					<div className="reward-nav">
+						<NavBar />
+					</div>
+					<div className="reward-sub-nav">
+						<p className="container">STARBUCKS® REWARDS</p>
+					</div>
+				</div>
+				.
 			</header>
 			<h2>REWARDS</h2>
 			<p>

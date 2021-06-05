@@ -5,7 +5,7 @@ import MenuList from "../components/menu/MenuList";
 import MenuAsideList from "../components/menu/MenuAsideList";
 const Menu = () => {
 	return (
-		<>
+		<div className="menu-wrapper">
 			<header>
 				<div className="menu-header">
 					<NavBar />
@@ -74,7 +74,7 @@ const Menu = () => {
 					</div>
 				</div>
 			</main>
-		</>
+		</div>
 	);
 };
 

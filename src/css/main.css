@@ -717,6 +717,13 @@ footer .copy-right p {
 .menu-container {
   max-width: 1045px;
   margin: 0 auto;
+  width: 85%;
+}
+
+.menu-wrapper header {
+  position: sticky;
+  top: 0;
+  background: white;
 }
 
 .menu-header {
@@ -734,8 +741,8 @@ footer .copy-right p {
 
 .menu-nav-sub-menu {
   background: #f2f0eb;
-  padding: 1rem 0;
   font-size: 0.8rem;
+  padding: 1rem;
 }
 
 .menu-nav-sub-menu .active {
@@ -763,10 +770,6 @@ footer .copy-right p {
   font-weight: 600;
 }
 
-.menu-content-container img {
-  max-width: 112px;
-}
-
 .menu-content-container .products {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -781,6 +784,7 @@ footer .copy-right p {
 .menu-content-container .products figure img {
   border-radius: 100%;
   margin-right: 1rem;
+  max-width: 112px;
 }
 
 .menu-content-container .products figure figcaption {
@@ -809,16 +813,43 @@ footer .copy-right p {
   margin-bottom: 1.5rem;
 }
 
+@media screen and (max-width: 766px) {
+  .menu-container {
+    width: 90%;
+  }
+  .menu-nav-sub-menu {
+    display: none;
+  }
+  .menu-content-container .products {
+    grid-template-columns: 1fr;
+  }
+  .menu-content-container .products figure img {
+    border-radius: 100%;
+    margin-right: 1rem;
+    max-width: 70px;
+  }
+  .menu-content-container .products figure figcaption {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 1020px) {
   aside {
     display: none;
   }
-  .menu-main-container {
-    justify-content: center;
-  }
-  .menu-container {
-    width: 75%;
-  }
+}
+
+.rewards-container header {
+  position: sticky;
+}
+
+.rewards-container .reward-sub-nav {
+  background: #1e3932;
+  padding: 1rem;
+  color: #f2f0eb;
+  font-weight: 600;
+  padding-left: 6rem;
+  font-size: 0.95rem;
 }
 
 *,

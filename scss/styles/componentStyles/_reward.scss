@@ -1,0 +1,16 @@
+@import "../reuseAbleStyles/default";
+
+.rewards-container {
+	header {
+		position: sticky;
+	}
+
+	.reward-sub-nav {
+		background: $dark-green;
+		padding: 1rem;
+		color: $light-gray;
+		font-weight: 600;
+		padding-left: 6rem;
+		font-size: 0.95rem;
+	}
+}

@@ -4,8 +4,28 @@
 	align-items: center;
 }
 
+@mixin text-semibold {
+	font-weight: 600;
+}
+
+@mixin text-bold {
+	font-weight: 700;
+}
+
+@mixin text-normalBold {
+	font-weight: 500;
+}
+
+@mixin text-normal {
+	font-weight: 400;
+}
+
 $green: #008248;
 $light-gray: #f2f0eb;
 $soft-black: rgba(0, 0, 0, 0.56);
 $header-color: #1e3932;
 $dark-green: #1e3932;
+$light-blue: rgb(212, 233, 226);
+$gold-color: #cba258;
+$yellow: #fbbc05;
+$red: #e75b52;

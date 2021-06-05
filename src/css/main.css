@@ -841,6 +841,7 @@ footer .copy-right p {
 
 .rewards-container header {
   position: sticky;
+  margin-bottom: 0;
 }
 
 .rewards-container .reward-sub-nav {
@@ -850,6 +851,44 @@ footer .copy-right p {
   font-weight: 600;
   padding-left: 6rem;
   font-size: 0.95rem;
+}
+
+.rewards-container .reward-main {
+  min-height: 700px;
+  background-color: #d4e9e2;
+  background-image: url("/src/components/home/home-images/starbuck-small-star.webp");
+  background-position: 55% 20%;
+  background-repeat: no-repeat;
+  background-size: auto 800px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.rewards-container .reward-main .reward-main-content {
+  line-height: 1.2;
+}
+
+.rewards-container .reward-main .reward-main-content span {
+  display: block;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.rewards-container .reward-main .reward-main-content h1 {
+  font-size: 2.3rem;
+}
+
+.rewards-container .reward-main .reward-main-content button {
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  background: #008248;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  margin-top: 1rem;
 }
 
 *,

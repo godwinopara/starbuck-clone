@@ -1,12 +1,13 @@
 const PaymentMethod = ({ paymentType }) => {
 	return (
-		<div className="payment-method">
+		<figure className="payment-method-types">
 			<img src={paymentType.image} alt="payment option" />
-			<div className="payment-content">
+
+			<figcaption className="payment-content">
 				<h3>{paymentType.title}</h3>
 				<p>{paymentType.details}</p>
-			</div>
-		</div>
+			</figcaption>
+		</figure>
 	);
 };
 

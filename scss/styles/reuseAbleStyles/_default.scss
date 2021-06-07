@@ -4,6 +4,12 @@
 	align-items: center;
 }
 
+@mixin displyFlex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 @mixin text-semibold {
 	font-weight: 600;
 }
@@ -29,3 +35,4 @@ $light-blue: rgb(212, 233, 226);
 $gold-color: #cba258;
 $yellow: #fbbc05;
 $red: #e75b52;
+$very-light-grey: #f3f1e7;

@@ -2,7 +2,9 @@ const ListPackages = ({ itemToList }) => {
 	const allItems = itemToList.map((item, index) => {
 		return (
 			<div key={index} className="package-wrapper">
-				<img src="" alt="" />
+				<div className="package-wrapper-img">
+					<img src={item.image} alt="" />
+				</div>
 				<div className="package-content">
 					<h3>{item.title}</h3>
 					<p>{item.details}</p>

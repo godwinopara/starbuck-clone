@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 footer .footer-links-container {
   padding: 2rem 0;
   margin: 1rem auto;
@@ -486,6 +486,10 @@ footer .copy-right p {
   }
 }
 
+.hamburger-menu {
+  cursor: pointer;
+}
+
 .hamburger-menu .hamburger {
   background-color: black;
   height: 2px;
@@ -867,6 +871,7 @@ footer .copy-right p {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin-bottom: 5rem;
 }
 
 .rewards-container .reward-main .reward-main-content {
@@ -895,6 +900,390 @@ footer .copy-right p {
   margin-top: 1rem;
 }
 
+@media screen and (min-width: 770px) {
+  .rewards-container .getting-started-header {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .rewards-container .getting-started-header h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+  }
+  .rewards-container .getting-started-header p {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  .rewards-container .getting-started-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .rewards-container .getting-started-content .account-steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    width: 30%;
+  }
+  .rewards-container .getting-started-content .account-steps .header-1 {
+    display: block;
+  }
+  .rewards-container .getting-started-content .account-steps .para1 {
+    display: block;
+  }
+  .rewards-container .getting-started-content .account-steps .header-2 {
+    display: none;
+  }
+  .rewards-container .getting-started-content .account-steps .para2 {
+    display: none;
+  }
+  .rewards-container .getting-started-content .account-steps .first-step-content,
+  .rewards-container .getting-started-content .account-steps .second-step-content,
+  .rewards-container .getting-started-content .account-steps .third-step-content {
+    margin: 0;
+  }
+  .rewards-container .getting-started-content .account-steps h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 1rem 0;
+  }
+  .rewards-container .getting-started-content .account-steps p {
+    width: 80%;
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .rewards-container .getting-started-content .account-step-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rewards-container .getting-started-content .account-step-img img {
+    max-width: 50px;
+  }
+  .rewards-container .starbuck-extras {
+    margin-bottom: 5rem;
+  }
+  .rewards-container .starbuck-extras-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .rewards-container .starbuck-extras-heading h2 {
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+  }
+  .rewards-container .starbuck-extras-heading p {
+    width: 70%;
+    margin: auto;
+    font-size: 1rem;
+  }
+  .rewards-container .starbuck-extras-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .rewards-container .starbuck-extras .package-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .rewards-container .starbuck-extras .package-wrapper-img {
+    max-width: 110px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+  .rewards-container .starbuck-extras .package-wrapper .package-content {
+    width: 100%;
+  }
+  .rewards-container .starbuck-extras .package-wrapper .package-content h3 {
+    margin: 1rem 0;
+    font-size: 1.15rem;
+  }
+  .rewards-container .starbuck-extras .package-wrapper .package-content p {
+    margin: 1rem 0;
+    width: 85%;
+    margin: auto;
+    font-size: 1rem;
+  }
+  .rewards-container .starbuck-extras .package-wrapper .package-content button {
+    border: none;
+    background: transparent;
+    color: #008248;
+    text-decoration: underline;
+    font-size: 1rem;
+    margin: 1rem 0;
+    font-weight: 400;
+  }
+  .rewards-container .payment-method {
+    background: #f3f1e7;
+    padding: 2rem 0;
+  }
+  .rewards-container .payment-method .title {
+    margin: 1rem 0 2rem 1rem;
+  }
+  .rewards-container .payment-method .title h3 {
+    font-size: 1.2rem;
+  }
+  .rewards-container .payment-method .payment-method-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .rewards-container .payment-method .payment-method-heading h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  .rewards-container .payment-method .payment-method-heading p {
+    width: 70%;
+    margin: auto;
+    font-size: 1rem;
+  }
+  .rewards-container .payment-method .payment-method-details .details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .rewards-container .payment-method figure {
+    display: flex;
+    margin-bottom: 1.5rem;
+  }
+  .rewards-container .payment-method figure img {
+    max-width: 100%;
+    height: 150px;
+  }
+  .rewards-container .payment-method figure figcaption {
+    margin-left: 1rem;
+  }
+  .rewards-container .payment-method figure figcaption h3 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  .rewards-container .payment-method figure figcaption p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .rewards-container .getting-started-header {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .rewards-container .getting-started-header h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+  }
+  .rewards-container .getting-started-header p {
+    font-weight: 400;
+  }
+  .rewards-container .getting-started-content .account-steps {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+  }
+  .rewards-container .getting-started-content .account-steps .header-1 {
+    display: none;
+  }
+  .rewards-container .getting-started-content .account-steps .para1 {
+    display: none;
+  }
+  .rewards-container .getting-started-content .account-steps .first-step-content,
+  .rewards-container .getting-started-content .account-steps .second-step-content,
+  .rewards-container .getting-started-content .account-steps .third-step-content {
+    margin-left: 1.5rem;
+  }
+  .rewards-container .getting-started-content h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+  }
+  .rewards-container .getting-started-content .account-step-img {
+    width: 10%;
+  }
+  .rewards-container .getting-started-content .account-step-img img {
+    max-width: 50px;
+  }
+  .rewards-container .starbuck-extras {
+    margin-bottom: 5rem;
+  }
+  .rewards-container .starbuck-extras-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .rewards-container .starbuck-extras-heading h2 {
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+  }
+  .rewards-container .starbuck-extras .package-wrapper {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  .rewards-container .starbuck-extras .package-wrapper-img {
+    max-width: 110px;
+    width: 30%;
+    margin-right: 1rem;
+  }
+  .rewards-container .starbuck-extras .package-wrapper .package-content {
+    width: 70%;
+  }
+  .rewards-container .starbuck-extras .package-wrapper .package-content h3 {
+    margin-bottom: 0.5rem;
+  }
+  .rewards-container .starbuck-extras .package-wrapper .package-content p {
+    margin: 1rem 0;
+  }
+  .rewards-container .starbuck-extras .package-wrapper .package-content button {
+    border: none;
+    background: transparent;
+    color: #008248;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  .rewards-container .payment-method {
+    background: #f3f1e7;
+    padding: 2rem 0;
+  }
+  .rewards-container .payment-method .title {
+    margin: 1rem 0 2rem 1rem;
+  }
+  .rewards-container .payment-method .title h3 {
+    font-size: 1.2rem;
+  }
+  .rewards-container .payment-method .payment-method-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .rewards-container .payment-method .payment-method-heading h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .rewards-container .payment-method .payment-method-details .title {
+    margin-top: 2rem;
+  }
+  .rewards-container .payment-method .payment-method-details .details {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .rewards-container .payment-method figure {
+    display: flex;
+    margin-bottom: 1.5rem;
+  }
+  .rewards-container .payment-method figure img {
+    max-width: 110px;
+    width: 30%;
+  }
+  .rewards-container .payment-method figure figcaption {
+    margin-left: 1rem;
+  }
+  .rewards-container .redeem-starbuck-code .starbuck-code-heading {
+    margin: 2rem 0;
+  }
+  .rewards-container .redeem-starbuck-code .starbuck-code-heading h2 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+  .rewards-container .redeem-starbuck-code .starbuck-code-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  .rewards-container .redeem-starbuck-code .starbuck-code-input input {
+    border: none;
+    display: inline-block;
+    padding-right: 10rem;
+    width: 100%;
+    outline: none;
+  }
+  .rewards-container .redeem-starbuck-code .starbuck-code-input button {
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    border-radius: 100px;
+    background-color: transparent;
+    border: 1px solid;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+  }
+  .rewards-container .redeem-starbuck-code .starbuck-code-input:focus-within {
+    border-color: green;
+  }
+  .rewards-container .redeem-starbuck-code .starbuck-code,
+  .rewards-container .redeem-starbuck-code .questions {
+    margin-bottom: 5rem;
+  }
+  .rewards-container .redeem-starbuck-code .questions h2 {
+    margin-bottom: 1rem;
+  }
+  .rewards-container .reward-terms-and-conditions {
+    background-color: #f7f7f7;
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+  }
+  .rewards-container .reward-terms-and-conditions .restrictions {
+    margin: 1rem 0;
+  }
+  .rewards-container .reward-terms-and-conditions .earning-stars-terms,
+  .rewards-container .reward-terms-and-conditions .terms-of-use,
+  .rewards-container .reward-terms-and-conditions .benefits,
+  .rewards-container .reward-terms-and-conditions .redeeming-rewards {
+    margin-bottom: 2rem;
+  }
+  .rewards-container .reward-terms-and-conditions .earning-stars-terms h3,
+  .rewards-container .reward-terms-and-conditions .terms-of-use h3,
+  .rewards-container .reward-terms-and-conditions .benefits h3,
+  .rewards-container .reward-terms-and-conditions .redeeming-rewards h3 {
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    color: rgba(0, 0, 0, 0.56);
+  }
+  .rewards-container .reward-terms-and-conditions .earning-stars-terms p,
+  .rewards-container .reward-terms-and-conditions .terms-of-use p,
+  .rewards-container .reward-terms-and-conditions .benefits p,
+  .rewards-container .reward-terms-and-conditions .redeeming-rewards p {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -905,8 +1294,9 @@ footer .copy-right p {
 
 body {
   color: rgba(0, 0, 0, 0.87);
+  color: black;
   line-height: 1.5;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
 }
 
@@ -921,7 +1311,7 @@ li {
 }
 
 .container {
-  width: 94%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -932,5 +1322,10 @@ img {
 
 h2 {
   color: #1e3932;
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,12 @@
+.giftcard-nav {
+	position: relative;
+
+	.gift::before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		height: 5px;
+		width: 97px;
+		background-color: $green;
+	}
+}

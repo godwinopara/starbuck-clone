@@ -1,9 +1,11 @@
 import NavBar from "../components/nav/NavBar";
 const GiftCard = () => {
 	return (
-		<div>
+		<div className="gift-card-wrapper">
 			<header>
-				<NavBar />
+				<div className="giftcard-nav">
+					<NavBar />
+				</div>
 			</header>
 			<h2>GIFT CARDS</h2>
 			<p>

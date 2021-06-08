@@ -13,28 +13,34 @@ const NavBar = () => {
 		openNav ? setopenNav(false) : setopenNav(true);
 	};
 	return (
-		<nav>
-			<div className="nav-container container">
-				<a className="logo" href="/">
-					<img src={starBuckIcon} alt="starbuck logo" />
-				</a>
-				<div className={`nav-links ${openNav ? "show-nav" : ""}`}>
-					<div className="left-side-nav">
-						<NavItem items={NavContent.leftSideLink} />
-					</div>
-					<div className="right-side-nav">
-						<div className="location">
-							<FontAwesomeIcon icon={faMapMarkerAlt} className="location-marker" />
-							<NavItem items={NavContent.findStore} />
+		<>
+			<nav>
+				<div className="nav-container container">
+					<a className="logo" href="/">
+						<img src={starBuckIcon} alt="starbuck logo" />
+					</a>
+					<div className={`nav-links ${openNav ? "show-nav" : ""}`}>
+						<div className="left-side-nav">
+							<NavItem items={NavContent.leftSideLink} />
 						</div>
-						<div className="signup">
-							<NavItem items={NavContent.signInLink} />
+						<div className="right-side-nav">
+							<div className="location">
+								<FontAwesomeIcon
+									icon={faMapMarkerAlt}
+									className="location-marker"
+								/>
+								<NavItem items={NavContent.findStore} />
+							</div>
+							<div className="signup">
+								<NavItem items={NavContent.signInLink} />
+							</div>
 						</div>
 					</div>
+					<Hamburger handleClick={handleOpenNav} />
 				</div>
-				<Hamburger handleClick={handleOpenNav} />
-			</div>
-		</nav>
+			</nav>
+			<hr />
+		</>
 	);
 };
 

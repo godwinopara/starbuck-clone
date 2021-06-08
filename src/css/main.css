@@ -734,6 +734,10 @@ footer .copy-right p {
   position: relative;
 }
 
+.menu-header .menu {
+  border: 1px solid black;
+}
+
 .menu-header .menu::before {
   content: "";
   position: absolute;
@@ -843,53 +847,58 @@ footer .copy-right p {
   }
 }
 
-.rewards-container input {
-  display: block;
+.rewards-container .reward-nav {
+  position: relative;
+  z-index: -1;
 }
 
-.rewards-container header {
-  position: sticky;
-  margin-bottom: 0;
+.rewards-container .rewards::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 84px;
+  bottom: 0;
+  background-color: #008248;
 }
 
 .rewards-container .reward-sub-nav {
   background: #1e3932;
   padding: 1rem;
   color: #f2f0eb;
-  font-weight: 600;
-  padding-left: 6rem;
-  font-size: 0.95rem;
+  font-weight: 700;
+  font-size: 0.9rem;
 }
 
 .rewards-container .reward-main {
-  min-height: 700px;
+  min-height: 500px;
   background-color: #d4e9e2;
   background-image: url("/src/components/home/home-images/starbuck-small-star.webp");
-  background-position: 55% 20%;
+  background-position: 70% 210%;
+  background-size: auto 400px;
   background-repeat: no-repeat;
-  background-size: auto 800px;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: center;
   margin-bottom: 5rem;
+  padding-top: 2rem;
 }
 
-.rewards-container .reward-main .reward-main-content {
+.rewards-container .reward-main-content {
   line-height: 1.2;
 }
 
-.rewards-container .reward-main .reward-main-content span {
+.rewards-container .reward-main-content span {
   display: block;
   margin: 1rem 0;
   font-size: 1.2rem;
   font-weight: 400;
 }
 
-.rewards-container .reward-main .reward-main-content h1 {
-  font-size: 2.3rem;
+.rewards-container .reward-main-content h1 {
+  font-size: 1.9rem;
 }
 
-.rewards-container .reward-main .reward-main-content button {
+.rewards-container .reward-main-content button {
   padding: 0.5rem 1rem;
   border-radius: 100px;
   background: #008248;
@@ -900,7 +909,94 @@ footer .copy-right p {
   margin-top: 1rem;
 }
 
+.rewards-container .favorite-tiers {
+  background: rgba(212, 233, 226, 0.33);
+  margin: 2rem 0;
+  padding: 2rem 0 0;
+}
+
+.rewards-container .favorite-tiers h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.rewards-container .favorite-tiers .tiers-star {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.rewards-container .favorite-tiers .tiers-star span {
+  display: inline-block;
+  color: #cba258;
+}
+
+.rewards-container .favorite-tiers .tiers-star .stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.rewards-container .favorite-tiers .tiers-star .stars h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.rewards-container .favorite-tiers .tiers-star .active-tier {
+  border-bottom: 4px solid #008248;
+}
+
+.rewards-container .favorite-tiers .tiers-images {
+  background: #d4e9e2;
+}
+
+.rewards-container .favorite-tiers .tiers-images figure {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.rewards-container .favorite-tiers .tiers-images figure figcaption {
+  padding: 2rem 0;
+}
+
+.rewards-container .favorite-tiers .tiers-images figure figcaption h2 {
+  font-size: 1.2rem;
+  color: black;
+}
+
 @media screen and (min-width: 770px) {
+  .rewards-container input {
+    display: block;
+  }
+  .rewards-container header {
+    position: sticky;
+    margin-bottom: 0;
+  }
+  .rewards-container .reward-sub-nav {
+    padding-left: 6rem;
+  }
+  .rewards-container .reward-sub-nav button {
+    display: none;
+  }
+  .rewards-container .reward-main {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 500px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 5rem;
+  }
+  .rewards-container .reward-main .desktop {
+    display: block;
+  }
+  .rewards-container .reward-main .mobile {
+    display: none;
+  }
   .rewards-container .getting-started-header {
     margin-bottom: 2rem;
     display: flex;
@@ -969,6 +1065,33 @@ footer .copy-right p {
   }
   .rewards-container .getting-started-content .account-step-img img {
     max-width: 50px;
+  }
+  .rewards-container .favorite-tiers .tiers-star {
+    max-width: 40%;
+    margin: auto;
+  }
+  .rewards-container .favorite-tiers .tiers-images figure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    text-align: left;
+    width: 70%;
+  }
+  .rewards-container .favorite-tiers .tiers-images figure img {
+    max-width: 50%;
+    width: 50%;
+  }
+  .rewards-container .favorite-tiers .tiers-images figure figcaption {
+    width: 45%;
+  }
+  .rewards-container .favorite-tiers .tiers-images figure figcaption h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+  }
+  .rewards-container .favorite-tiers .tiers-images figure figcaption p {
+    font-size: 1rem;
   }
   .rewards-container .starbuck-extras {
     margin-bottom: 5rem;
@@ -1057,13 +1180,14 @@ footer .copy-right p {
     font-weight: 700;
   }
   .rewards-container .payment-method .payment-method-heading p {
-    width: 70%;
+    width: 60%;
     margin: auto;
     font-size: 1rem;
   }
   .rewards-container .payment-method .payment-method-details .details {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
   .rewards-container .payment-method figure {
@@ -1084,9 +1208,136 @@ footer .copy-right p {
   .rewards-container .payment-method figure figcaption p {
     font-size: 1rem;
   }
+  .rewards-container .redeem-starbuck-code {
+    width: 50%;
+    margin: 3rem auto;
+  }
+  .rewards-container .redeem-starbuck-code .starbuck-code-heading {
+    margin: 2rem 0;
+  }
+  .rewards-container .redeem-starbuck-code .starbuck-code-heading h2 {
+    margin: 1rem 0;
+    font-size: 1.9rem;
+    font-weight: 700;
+  }
+  .rewards-container .redeem-starbuck-code .starbuck-code-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin-bottom: 2rem;
+  }
+  .rewards-container .redeem-starbuck-code .starbuck-code-input input {
+    border: none;
+    display: inline-block;
+    padding-right: 10rem;
+    width: 100%;
+    outline: none;
+  }
+  .rewards-container .redeem-starbuck-code .starbuck-code-input button {
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    border-radius: 100px;
+    background-color: transparent;
+    border: 1px solid;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+  }
+  .rewards-container .redeem-starbuck-code .starbuck-code-input:focus-within {
+    border-color: green;
+  }
+  .rewards-container .redeem-starbuck-code .starbuck-code,
+  .rewards-container .redeem-starbuck-code .questions {
+    margin-bottom: 5rem;
+  }
+  .rewards-container .redeem-starbuck-code .questions h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  .rewards-container .reward-terms-and-conditions {
+    background-color: #f7f7f7;
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+  }
+  .rewards-container .reward-terms-and-conditions .restrictions {
+    margin: 1rem auto;
+  }
+  .rewards-container .reward-terms-and-conditions .terms-and-conditions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+  }
+  .rewards-container .reward-terms-and-conditions .earning-stars-terms,
+  .rewards-container .reward-terms-and-conditions .terms-of-use,
+  .rewards-container .reward-terms-and-conditions .benefits,
+  .rewards-container .reward-terms-and-conditions .redeeming-rewards {
+    margin-bottom: 2rem;
+  }
+  .rewards-container .reward-terms-and-conditions .earning-stars-terms h3,
+  .rewards-container .reward-terms-and-conditions .terms-of-use h3,
+  .rewards-container .reward-terms-and-conditions .benefits h3,
+  .rewards-container .reward-terms-and-conditions .redeeming-rewards h3 {
+    margin-bottom: 1rem;
+    font-size: 0.88rem;
+    color: rgba(0, 0, 0, 0.56);
+  }
+  .rewards-container .reward-terms-and-conditions .earning-stars-terms p,
+  .rewards-container .reward-terms-and-conditions .terms-of-use p,
+  .rewards-container .reward-terms-and-conditions .benefits p,
+  .rewards-container .reward-terms-and-conditions .redeeming-rewards p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .rewards-container .reward-main {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 700px;
+  }
+  .rewards-container .reward-main .reward-main-content h1 {
+    font-size: 2.3rem;
+  }
+  .rewards-container .payment-method .payment-method-details {
+    width: 85%;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 770px) {
+  .rewards-container .reward-sub-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .rewards-container .reward-sub-nav button {
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: 45%;
+    border-radius: 100px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+  }
+  .rewards-container .reward-main {
+    min-height: 550px;
+  }
+  .rewards-container .reward-main .desktop {
+    display: none;
+  }
+  .rewards-container .reward-main .mobile span {
+    font-size: 1rem;
+  }
+  .rewards-container .reward-main .mobile .online {
+    text-decoration: underline;
+  }
   .rewards-container .getting-started-header {
     margin-bottom: 2rem;
     display: flex;
@@ -1258,7 +1509,7 @@ footer .copy-right p {
     margin-bottom: 3rem;
   }
   .rewards-container .reward-terms-and-conditions .restrictions {
-    margin: 1rem 0;
+    margin: 1rem auto;
   }
   .rewards-container .reward-terms-and-conditions .earning-stars-terms,
   .rewards-container .reward-terms-and-conditions .terms-of-use,
@@ -1311,7 +1562,7 @@ li {
 }
 
 .container {
-  width: 90%;
+  width: 92%;
   margin: 0 auto;
 }
 

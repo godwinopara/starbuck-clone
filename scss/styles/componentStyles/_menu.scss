@@ -20,6 +20,9 @@
 }
 .menu-header {
 	position: relative;
+	.menu {
+		border: 1px solid black;
+	}
 	.menu::before {
 		content: "";
 		position: absolute;

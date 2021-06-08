@@ -1,12 +1,15 @@
 const ListStar = ({ stars }) => {
 	const starItem = stars.map((star, index) => {
 		return (
-			<div key={index}>
+			<div className="stars" id={star} key={index} onClick={handleClick}>
 				<h3>{star}</h3>
 				<span>★</span>
 			</div>
 		);
 	});
+	function handleClick() {
+		console.log(stars);
+	}
 	return [starItem];
 };
 

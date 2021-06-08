@@ -1,63 +1,159 @@
 @import "../reuseAbleStyles/default";
 
 .rewards-container {
-	input {
-		display: block;
-	}
-	header {
-		position: sticky;
-		margin-bottom: 0;
+	.reward-nav {
+		position: relative;
+		z-index: -1;
 	}
 
+	// i gave every link a class of the name of the link when i create a component for the navbar in the navContent
+	.rewards::before {
+		content: "";
+		position: absolute;
+		height: 5px;
+		width: 84px;
+		bottom: 0;
+		background-color: $green;
+	}
 	.reward-sub-nav {
 		background: $dark-green;
 		padding: 1rem;
 		color: $light-gray;
-		font-weight: 600;
-		padding-left: 6rem;
-		font-size: 0.95rem;
+		@include text-bold;
+		font-size: 0.9rem;
 	}
-
 	.reward-main {
-		min-height: 700px;
+		min-height: 500px;
 		background-color: $light-blue;
 		background-image: url("/src/components/home/home-images/starbuck-small-star.webp");
-		background-position: 55% 20%;
+		background-position: 70% 210%;
+		background-size: auto 400px;
 		background-repeat: no-repeat;
-		background-size: auto 800px;
 		display: flex;
-		align-items: center;
-		justify-content: flex-start;
+		align-items: flex-start;
+		justify-content: center;
 		margin-bottom: 5rem;
+		padding-top: 2rem;
+	}
 
-		.reward-main-content {
-			line-height: 1.2;
+	.reward-main-content {
+		line-height: 1.2;
+		span {
+			display: block;
+			margin: 1rem 0;
+			font-size: 1.2rem;
+			@include text-normal;
+		}
+
+		h1 {
+			font-size: 1.9rem;
+		}
+
+		button {
+			padding: 0.5rem 1rem;
+			border-radius: 100px;
+			background: $green;
+			border: none;
+			@include text-semibold;
+			font-size: 1rem;
+			color: white;
+			margin-top: 1rem;
+		}
+	}
+
+	.favorite-tiers {
+		background: rgba(212, 233, 226, 0.33);
+		margin: 2rem 0;
+		padding: 2rem 0 0;
+		h2 {
+			text-align: center;
+			font-size: 1.5rem;
+			margin-bottom: 1rem;
+		}
+
+		.tiers-star {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+
 			span {
-				display: block;
-				margin: 1rem 0;
-				font-size: 1.2rem;
-				@include text-normal;
+				display: inline-block;
+				color: $gold-color;
 			}
 
-			h1 {
-				font-size: 2.3rem;
+			.stars {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				padding-bottom: 0.5rem;
+				cursor: pointer;
+
+				h3 {
+					font-size: 1.3rem;
+					@include text-semibold;
+				}
 			}
 
-			button {
-				padding: 0.5rem 1rem;
-				border-radius: 100px;
-				background: $green;
-				border: none;
-				@include text-semibold;
-				font-size: 1rem;
-				color: white;
-				margin-top: 1rem;
+			.active-tier {
+				border-bottom: 4px solid $green;
+			}
+		}
+		.tiers-images {
+			background: $light-blue;
+
+			figure {
+				width: 90%;
+				margin: auto;
+				text-align: center;
+
+				figcaption {
+					padding: 2rem 0;
+
+					h2 {
+						font-size: 1.2rem;
+						color: black;
+					}
+				}
 			}
 		}
 	}
 }
+
 @media screen and (min-width: 770px) {
 	.rewards-container {
+		input {
+			display: block;
+		}
+		header {
+			position: sticky;
+			margin-bottom: 0;
+		}
+
+		.reward-sub-nav {
+			padding-left: 6rem;
+
+			button {
+				display: none;
+			}
+		}
+
+		.reward-main {
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: auto 500px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			margin-bottom: 5rem;
+
+			.desktop {
+				display: block;
+			}
+			.mobile {
+				display: none;
+			}
+		}
+
 		.getting-started {
 			&-header {
 				margin-bottom: 2rem;
@@ -129,6 +225,40 @@
 
 					img {
 						max-width: 50px;
+					}
+				}
+			}
+		}
+
+		.favorite-tiers {
+			.tiers-star {
+				max-width: 40%;
+				margin: auto;
+			}
+			.tiers-images {
+				figure {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					padding: 2rem 0;
+					text-align: left;
+					width: 70%;
+					img {
+						max-width: 50%;
+						width: 50%;
+					}
+
+					figcaption {
+						width: 45%;
+						h2 {
+							font-size: 1.5rem;
+							@include text-bold;
+							text-align: left;
+						}
+
+						p {
+							font-size: 1rem;
+						}
 					}
 				}
 			}
@@ -220,7 +350,7 @@
 				}
 
 				p {
-					width: 70%;
+					width: 60%;
 					margin: auto;
 					font-size: 1rem;
 				}
@@ -230,6 +360,7 @@
 				.details {
 					display: grid;
 					grid-template-columns: repeat(2, 1fr);
+					column-gap: 2rem;
 					border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 				}
 			}
@@ -258,11 +389,155 @@
 				}
 			}
 		}
+
+		.redeem-starbuck-code {
+			width: 50%;
+			margin: 3rem auto;
+			.starbuck-code-heading {
+				margin: 2rem 0;
+				h2 {
+					margin: 1rem 0;
+					font-size: 1.9rem;
+					@include text-bold;
+				}
+			}
+
+			.starbuck-code-input {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				border-bottom: 1px solid black;
+				margin-bottom: 2rem;
+
+				input {
+					border: none;
+					display: inline-block;
+					padding-right: 10rem;
+					width: 100%;
+					outline: none;
+				}
+				button {
+					padding: 0.6rem 1.2rem;
+					@include text-semibold;
+					border-radius: 100px;
+					background-color: transparent;
+					border: 1px solid;
+					outline: none;
+					cursor: pointer;
+					margin-bottom: 0.5rem;
+				}
+			}
+			.starbuck-code-input:focus-within {
+				border-color: green;
+			}
+			.starbuck-code,
+			.questions {
+				margin-bottom: 5rem;
+			}
+
+			.questions {
+				h2 {
+					font-size: 1.9rem;
+					margin-bottom: 1rem;
+					@include text-bold;
+				}
+			}
+		}
+
+		.reward-terms-and-conditions {
+			background-color: #f7f7f7;
+			padding: 1rem 0;
+			margin-bottom: 3rem;
+
+			.restrictions {
+				margin: 1rem auto;
+			}
+
+			.terms-and-conditions {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				column-gap: 3rem;
+			}
+
+			.earning-stars-terms,
+			.terms-of-use,
+			.benefits,
+			.redeeming-rewards {
+				margin-bottom: 2rem;
+
+				h3 {
+					margin-bottom: 1rem;
+					font-size: 0.88rem;
+					color: $soft-black;
+				}
+				p {
+					margin-top: 1rem;
+					font-size: 0.9rem;
+					@include text-normal;
+					color: black;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.rewards-container {
+		.reward-main {
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: auto 700px;
+
+			.reward-main-content {
+				h1 {
+					font-size: 2.3rem;
+				}
+			}
+		}
+
+		.payment-method {
+			.payment-method-details {
+				width: 85%;
+				margin: auto;
+			}
+		}
 	}
 }
 
 @media screen and (max-width: 770px) {
 	.rewards-container {
+		.reward-sub-nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			text-align: center;
+
+			button {
+				padding: 0.5rem 0;
+				font-size: 0.9rem;
+				@include text-semibold;
+				width: 45%;
+				border-radius: 100px;
+				border: 1px solid white;
+				background: transparent;
+				color: white;
+			}
+		}
+		.reward-main {
+			min-height: 550px;
+			.desktop {
+				display: none;
+			}
+
+			.mobile {
+				span {
+					font-size: 1rem;
+				}
+				.online {
+					text-decoration: underline;
+				}
+			}
+		}
 		.getting-started {
 			&-header {
 				margin-bottom: 2rem;
@@ -463,7 +738,7 @@
 			margin-bottom: 3rem;
 
 			.restrictions {
-				margin: 1rem 0;
+				margin: 1rem auto;
 			}
 
 			.earning-stars-terms,

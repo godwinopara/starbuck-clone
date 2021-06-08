@@ -1,6 +1,6 @@
 import NavBar from "../components/nav/NavBar";
-import ListStar from "../components/reward/ListStar";
 import rewardContent from "../components/reward/rewardContent";
+import Tiers from "../components/reward/Tiers";
 import ListItems from "../components/reward/ListItems";
 import number1Image from "../images/number1.webp";
 import number2Image from "../images/number2.webp";
@@ -10,18 +10,17 @@ const Rewards = () => {
 	return (
 		<div className="rewards-container">
 			<header>
-				<div className="reward-header-wrapper">
-					<div className="reward-nav">
-						<NavBar />
-					</div>
-					<div className="reward-sub-nav">
-						<p className="container">STARBUCKS® REWARDS</p>
-					</div>
+				<div className="reward-nav">
+					<NavBar />
+				</div>
+				<div className="reward-sub-nav">
+					<p className="container">STARBUCKS® REWARDS</p>
+					<button className="join-app">Join in the app</button>
 				</div>
 			</header>
 			<main>
 				<section className="reward-main">
-					<div className="reward-main-content container">
+					<div className="reward-main-content desktop container">
 						<h1>
 							FREE COFFEE
 							<br />
@@ -30,6 +29,16 @@ const Rewards = () => {
 						<span>Join now to start earning Rewards</span>
 						<button>Join Now</button>
 						<span>Or join in the app for best experience</span>
+					</div>
+					<div className="reward-main-content mobile">
+						<h1>
+							FREE COFFEE
+							<br />
+							IS A TAP AWAY
+						</h1>
+						<span>Join now to start earning Rewards</span>
+						<button>Join in the app</button>
+						<span className="online">Or join online</span>
 					</div>
 				</section>
 				<section className="getting-started">
@@ -84,13 +93,8 @@ const Rewards = () => {
 						</div>
 					</div>
 				</section>
-				<section className="get-favorite">
-					<h2>Get your favorites for free</h2>
-					<div className="favorite-products">
-						<div className="favorite-total-stars">
-							<ListStar stars={[25, 50, 150, 200, 400]} />
-						</div>
-					</div>
+				<section className="favorite-tiers">
+					<Tiers />
 				</section>
 				<section className="starbuck-extras container">
 					<div className="starbuck-extras-heading">
@@ -184,11 +188,10 @@ const Rewards = () => {
 					</div>
 				</section>
 				<section className="reward-terms-and-conditions">
+					<div className="restrictions container">
+						<p>At participating stores. Restrictions apply.</p>
+					</div>
 					<div className="terms-and-conditions container">
-						<div className="restrictions">
-							<p>At participating stores. Restrictions apply.</p>
-						</div>
-
 						<div className="earning-stars-terms">
 							<h3>EARNING STARS</h3>
 							<p>

@@ -1,6 +1,14 @@
 import NavBar from "../components/nav/NavBar";
 import BulkGiftCard from "../images/giftcards/bulk-gift-cards.webp";
+import AliceCarousel from "react-alice-carousel";
+import giftCardContent from "../components/giftcard/giftcardContent";
 const GiftCard = () => {
+	const responsive = {
+		0: { items: 3 },
+		568: { items: 2 },
+		1024: { items: 4 },
+	};
+
 	return (
 		<div className="gift-card-wrapper">
 			<header>
@@ -13,6 +21,16 @@ const GiftCard = () => {
 					<div className="featured-heading">
 						<h3>FEATURED</h3>
 						<button>See all</button>
+					</div>
+					<div className="giftcards">
+						<AliceCarousel
+							items={giftCardContent.featuredGiftCard}
+							responsive={responsive}
+							controlsStrategy="alternate"
+							mouseTracking
+							paddingLeft={40}
+							paddingRight={50}
+						/>
 					</div>
 				</section>
 				<section className="check-balance">

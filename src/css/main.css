@@ -1543,6 +1543,15 @@ footer .copy-right p {
   background-color: #008248;
 }
 
+.gift-cards .featured-giftcard {
+  border-radius: 10px;
+}
+
+.alice-carousel_wrapper {
+  padding-left: 150px;
+  padding-right: 50px;
+}
+
 *,
 *::before,
 *::after {

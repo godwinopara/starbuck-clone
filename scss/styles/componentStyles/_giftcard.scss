@@ -10,3 +10,69 @@
 		background-color: $green;
 	}
 }
+
+// .giftcards {
+// 	img {
+// 		max-width: 50%;
+// 	}
+
+// 	.featured-giftcard {
+// 		border-radius: 10px;
+// 	}
+// 	.alice-carousel {
+// 		border: 1px solid black;
+// 	}
+// 	.alice-carousel__prev-btn,
+// 	.alice-carousel__next-btn {
+// 		position: absolute;
+// 		background: transparent;
+// 		color: white;
+// 		top: 20%;
+// 		display: block;
+// 		height: auto;
+// 		width: 4%;
+// 		text-align: center;
+// 		border-radius: 50%;
+// 	}
+
+// 	.alice-carousel__prev-btn {
+// 		left: 5rem;
+// 	}
+// 	.alice-carousel__next-btn {
+// 		right: 0;
+// 	}
+
+// 	.alice-carousel__next-btn-item,
+// 	.alice-carousel__prev-btn-item {
+// 		color: $soft-black;
+// 		font-size: 1.5rem;
+// 		border-radius: 100%;
+// 		text-align: center;
+// 		cursor: pointer;
+
+// 		display: flex;
+// 		align-items: center;
+// 		justify-content: center;
+// 		background: white;
+// 		-webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+// 		-moz-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+// 		box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+// 	}
+
+// 	.alice-carousel__next-btn-item:hover,
+// 	.alice-carousel__prev-btn-item:hover {
+// 		color: black;
+// 	}
+// }
+
+.gift-cards {
+	.featured-giftcard {
+		border-radius: 10px;
+	}
+}
+.alice-carousel {
+}
+.alice-carousel_wrapper {
+	padding-left: 150px;
+	padding-right: 50px;
+}

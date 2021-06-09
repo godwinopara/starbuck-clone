@@ -4,7 +4,6 @@ import AllTogetherNow from "../../images/giftcards/all-together-now.webp";
 import Besties from "../../images/giftcards/besties.webp";
 import BirthdayCandle from "../../images/giftcards/birthday-candle.webp";
 import BirthdayVibe from "../../images/giftcards/birthday-vibe.webp";
-import BulkGiftCard from "../../images/giftcards/bulk-gift-cards.webp";
 import CoffeeGoodIdea from "../../images/giftcards/coffee-good-idea.webp";
 import Congrats from "../../images/giftcards/congrats.webp";
 import CouldntWithoutYou from "../../images/giftcards/couldnt-without-you.webp";
@@ -37,7 +36,7 @@ import YouAmazeMe from "../../images/giftcards/you-amaze-me.webp";
 import YouAreWonderful from "../../images/giftcards/you-areWonderful.webp";
 import YesQueen from "../../images/giftcards/yes-queen.webp";
 import BestTeacherEver from "../../images/giftcards/best-teacher-ever.webp";
-import YouGetA from "../../images/giftcards/you-got-A.webp";
+import YouGetA from "../../images/giftcards/you-get-A.webp";
 import LoveYouGirl from "../../images/giftcards/love-youGirl.webp";
 import YouAreHere from "../../images/giftcards/you-are-here.webp";
 import OverTheMoon from "../../images/giftcards/over-theMoon.webp";
@@ -56,16 +55,20 @@ import StarbuckAnyTimeGiftCard2 from "../../images/giftcards/anytime-giftcard1.w
 import StarbuckAnyTimeGiftCard3 from "../../images/giftcards/anytime-giftcard3.webp";
 
 const featuredGiftCard = [
-	<img src={FiftyYears} alt="fifty year gift card" />,
-	<img src={BirthdayCandle} alt="birthday gift card" />,
-	<img src={CouldntWithoutYou} alt="couldn't without you gift card" />,
-	<img src={HappyFathersDay} alt="happy father's day gift card" />,
-	<img src={GoodThingsAhead} alt="good things ahead gift card" />,
-	<img src={NotWithoutYou} alt="i'm not without you gift card" />,
-	<img src={Pride} alt="pride gift card" />,
-	<img src={SkyTheLimit} alt="the sky is the limit gift card" />,
-	<img src={YouTakeCareOfUs} alt="you take care of us gift card" />,
-	<img src={ThankYouTeacher} alt="thank you teacher gift card" />,
+	<img className="featured-giftcard" src={FiftyYears} alt="fifty year gift card" />,
+	<img className="featured-giftcard" src={BirthdayCandle} alt="birthday gift card" />,
+	<img
+		className="featured-giftcard"
+		src={CouldntWithoutYou}
+		alt="couldn't without you gift card"
+	/>,
+	<img className="featured-giftcard" src={HappyFathersDay} alt="happy father's day gift card" />,
+	<img className="featured-giftcard" src={GoodThingsAhead} alt="good things ahead gift card" />,
+	<img className="featured-giftcard" src={NotWithoutYou} alt="i'm not without you gift card" />,
+	<img className="featured-giftcard" src={Pride} alt="pride gift card" />,
+	<img className="featured-giftcard" src={SkyTheLimit} alt="the sky is the limit gift card" />,
+	<img className="featured-giftcard" src={YouTakeCareOfUs} alt="you take care of us gift card" />,
+	<img className="featured-giftcard" src={ThankYouTeacher} alt="thank you teacher gift card" />,
 ];
 
 const fathersDayGiftCard = [
@@ -157,3 +160,29 @@ const communityGiftCard = [
 	<img src={ServiceGratitude} alt="community gift cards" />,
 	<img src={ThankYouForAllYouDo} alt="community gift cards" />,
 ];
+
+const anyTimeGiftCard = [
+	<img src={StarbuckAnyTimeGiftCard1} alt="gift you can buy for any occassion" />,
+	<img src={StarbuckAnyTimeGiftCard2} alt="gift you can buy for any occassion" />,
+	<img src={StarbuckAnyTimeGiftCard3} alt="gift you can buy for any occassion" />,
+];
+
+const giftCardContent = {
+	featuredGiftCard,
+	fathersDayGiftCard,
+	thankYouGiftCard,
+	birthdayGiftCard,
+	graduationGiftCard,
+	prideGiftCard,
+	appreciationGiftCard,
+	teacherAppreciationGiftCard,
+	loveGiftCard,
+	recognitonGiftCard,
+	encouragementGiftCard,
+	workplaceGiftCard,
+	anniversaryGiftCard,
+	communityGiftCard,
+	anyTimeGiftCard,
+};
+
+export default giftCardContent;

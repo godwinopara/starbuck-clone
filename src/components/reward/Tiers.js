@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ListStar from "./ListStar";
 import rewardTiers1 from "../../images/reward-tiers1.webp";
 import rewardTiers2 from "../../images/reward-tiers2.webp";
 import rewardTiers3 from "../../images/reward-tiers3.webp";

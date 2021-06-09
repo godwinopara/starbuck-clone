@@ -1,4 +1,6 @@
 @import "../reuseAbleStyles/default";
+$img-mobile: "/src/images/reward-hero-mobile_2021.jpg";
+$img-desktop: "/src/components/home/home-images/starbuck-small-star.webp";
 
 .rewards-container {
 	.reward-nav {
@@ -24,7 +26,7 @@
 	.reward-main {
 		min-height: 500px;
 		background-color: $light-blue;
-		background-image: url("/src/components/home/home-images/starbuck-small-star.webp");
+		background-image: url($img-desktop);
 		background-position: 70% 210%;
 		background-size: auto 400px;
 		background-repeat: no-repeat;
@@ -509,13 +511,13 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			text-align: center;
 
 			button {
 				padding: 0.5rem 0;
 				font-size: 0.9rem;
 				@include text-semibold;
-				width: 45%;
+				max-width: 50%;
+				width: 10rem;
 				border-radius: 100px;
 				border: 1px solid white;
 				background: transparent;
@@ -524,6 +526,10 @@
 		}
 		.reward-main {
 			min-height: 550px;
+			background: url($img-mobile);
+			background-position: center;
+			background-size: cover;
+
 			.desktop {
 				display: none;
 			}

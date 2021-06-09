@@ -1306,13 +1306,13 @@ footer .copy-right p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
   }
   .rewards-container .reward-sub-nav button {
     padding: 0.5rem 0;
     font-size: 0.9rem;
     font-weight: 600;
-    width: 45%;
+    max-width: 50%;
+    width: 10rem;
     border-radius: 100px;
     border: 1px solid white;
     background: transparent;
@@ -1320,6 +1320,9 @@ footer .copy-right p {
   }
   .rewards-container .reward-main {
     min-height: 550px;
+    background: url("/src/images/reward-hero-mobile_2021.jpg");
+    background-position: center;
+    background-size: cover;
   }
   .rewards-container .reward-main .desktop {
     display: none;

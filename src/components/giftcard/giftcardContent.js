@@ -44,8 +44,8 @@ import HeartYouSoMuch from "../../images/giftcards/heartYouSoMuch.webp";
 import ThanksForGivingYouAll from "../../images/giftcards/giving-yourAll.webp";
 import YourHardWorkNoticed from "../../images/giftcards/your-hardWorkNoticed.webp";
 import YouAreAmazing from "../../images/giftcards/you-areAmazing.webp";
-import HangInThere from "../../images/giftcards/you-areAmazing.webp";
-import FriendByFriendCoffee from "../../images/giftcards/you-areAmazing.webp";
+import HangInThere from "../../images/giftcards/hangInthere.webp";
+import FriendByFriendCoffee from "../../images/giftcards/friend-by-friend-coffee.webp";
 import PositiveEnergy from "../../images/giftcards/you-areAmazing.webp";
 import HighFive from "../../images/giftcards/high-five.webp";
 import ServiceGratitude from "../../images/giftcards/service-gratitude.webp";
@@ -55,20 +55,43 @@ import StarbuckAnyTimeGiftCard2 from "../../images/giftcards/anytime-giftcard1.w
 import StarbuckAnyTimeGiftCard3 from "../../images/giftcards/anytime-giftcard3.webp";
 
 const featuredGiftCard = [
-	<img className="featured-giftcard" src={FiftyYears} alt="fifty year gift card" />,
-	<img className="featured-giftcard" src={BirthdayCandle} alt="birthday gift card" />,
-	<img
-		className="featured-giftcard"
-		src={CouldntWithoutYou}
-		alt="couldn't without you gift card"
-	/>,
-	<img className="featured-giftcard" src={HappyFathersDay} alt="happy father's day gift card" />,
-	<img className="featured-giftcard" src={GoodThingsAhead} alt="good things ahead gift card" />,
-	<img className="featured-giftcard" src={NotWithoutYou} alt="i'm not without you gift card" />,
-	<img className="featured-giftcard" src={Pride} alt="pride gift card" />,
-	<img className="featured-giftcard" src={SkyTheLimit} alt="the sky is the limit gift card" />,
-	<img className="featured-giftcard" src={YouTakeCareOfUs} alt="you take care of us gift card" />,
-	<img className="featured-giftcard" src={ThankYouTeacher} alt="thank you teacher gift card" />,
+	<img src={FiftyYears} alt="fifty year gift card" />,
+	<img src={BirthdayCandle} alt="birthday gift card" />,
+	<img src={CouldntWithoutYou} alt="couldn't without you gift card" />,
+	<img src={HappyFathersDay} alt="happy father's day gift card" />,
+	<img src={GoodThingsAhead} alt="good things ahead gift card" />,
+	<img src={NotWithoutYou} alt="i'm not without you gift card" />,
+	<img src={Pride} alt="pride gift card" />,
+	<img src={SkyTheLimit} alt="the sky is the limit gift card" />,
+	<img src={YouTakeCareOfUs} alt="you take care of us gift card" />,
+	<img src={ThankYouTeacher} alt="thank you teacher gift card" />,
+	<img src={GoodThingsAhead} alt="encouragement gift card" />,
+	<img src={CoffeeGoodIdea} alt="encouragement gift card" />,
+	<img src={HangInThere} alt="encouragement gift card" />,
+	<img src={FriendByFriendCoffee} alt="encouragement gift card" />,
+	<img src={PositiveEnergy} alt="encouragement gift card" />,
+	<img src={YouAmazeMe} alt="appreciation gift card" />,
+	<img src={YouAreWonderful} alt="appreciation gift card" />,
+	<img src={YouAreBestest} alt="appreciation gift card" />,
+	<img src={YesQueen} alt="appreciation gift card" />,
+	<img src={Yay} alt="appreciation gift card" />,
+	<img src={ExtraShotOfPride} alt="pride gift card" />,
+	<img src={LoveYouAll} alt="love you all gift card" />,
+	<img src={AllTogetherNow} alt="pride gift card" />,
+	<img src={MyTreat} alt="pride gift card" />,
+	<img src={Unstoppable} alt="unstoppable gift card" />,
+	<img src={Congrats} alt="congrats gift card" />,
+	<img src={WayToGo} alt="way to go gift card" />,
+	<img src={ThankGoodnessForYou} alt="way to go gift card" />,
+	<img src={StarbuckAnyTimeGiftCard1} alt="gift you can buy for any occassion" />,
+	<img src={StarbuckAnyTimeGiftCard2} alt="gift you can buy for any occassion" />,
+	<img src={StarbuckAnyTimeGiftCard3} alt="gift you can buy for any occassion" />,
+	<img src={ExtraShotOfPride} alt="community gift cards" />,
+	<img src={ServiceGratitude} alt="community gift cards" />,
+	<img src={ThankYouForAllYouDo} alt="community gift cards" />,
+	<img src={Besties} alt="community gift cards" />,
+	<img src={FriendForever} alt="community gift cards" />,
+	<img src={YouAreMyFave} alt="community gift cards" />,
 ];
 
 const fathersDayGiftCard = [
@@ -98,6 +121,7 @@ const graduationGiftCard = [
 	<img src={Unstoppable} alt="unstoppable gift card" />,
 	<img src={Congrats} alt="congrats gift card" />,
 	<img src={WayToGo} alt="way to go gift card" />,
+	<img src={ThankGoodnessForYou} alt="way to go gift card" />,
 ];
 
 const prideGiftCard = [
@@ -105,6 +129,7 @@ const prideGiftCard = [
 	<img src={ExtraShotOfPride} alt="pride gift card" />,
 	<img src={LoveYouAll} alt="love you all gift card" />,
 	<img src={AllTogetherNow} alt="pride gift card" />,
+	<img src={MyTreat} alt="pride gift card" />,
 ];
 
 const appreciationGiftCard = [
@@ -113,11 +138,12 @@ const appreciationGiftCard = [
 	<img src={YouAreBestest} alt="appreciation gift card" />,
 	<img src={YesQueen} alt="appreciation gift card" />,
 	<img src={Yay} alt="appreciation gift card" />,
+	<img src={ThankYouForAllYouDo} alt="community gift cards" />,
 ];
 
 const teacherAppreciationGiftCard = [
 	<img src={BestTeacherEver} alt="teacher appreciation gift card" />,
-	<img src={BestTeacherEver} alt="teacher appreciation gift card" />,
+	<img src={ThankYouTeacher} alt="teacher appreciation gift card" />,
 	<img src={YouGetA} alt="teacher appreciation gift card" />,
 ];
 
@@ -150,6 +176,7 @@ const workplaceGiftCard = [
 	<img src={HighFive} alt="workplace gift cards" />,
 	<img src={YourHardWorkNoticed} alt="workplace gift cards" />,
 	<img src={WayToGo} alt="workplace gift cards" />,
+	<img src={FavoritePerson} alt="workplace gift cards" />,
 ];
 
 const anniversaryGiftCard = [<img src={FiftyYears} alt="fifty years anniversary card" />];
@@ -159,6 +186,7 @@ const communityGiftCard = [
 	<img src={LoveYouAll} alt="community gift cards" />,
 	<img src={ServiceGratitude} alt="community gift cards" />,
 	<img src={ThankYouForAllYouDo} alt="community gift cards" />,
+	<img src={CouldntWithoutYou} alt="community gift cards" />,
 ];
 
 const anyTimeGiftCard = [

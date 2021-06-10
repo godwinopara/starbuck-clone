@@ -1,3 +1,107 @@
+@import "../reuseAbleStyles/default";
+
+// general style for the gift card page
+
+.gift-card-wrapper {
+	.container {
+		width: 91%;
+	}
+	button {
+		color: $green;
+		background: transparent;
+		border: none;
+		font-size: 0.9rem;
+		@include text-semibold;
+	}
+
+	.heading {
+		@include centeredflex;
+		justify-content: space-between;
+		margin-bottom: 1.5rem;
+
+		h3 {
+			font-size: 0.85rem;
+		}
+	}
+
+	figure {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.bulk-giftcard {
+		background: #f7f7f7;
+		padding: 3rem 0;
+		figure {
+			grid-template-columns: 1fr;
+			width: 90%;
+
+			img {
+				width: 80%;
+			}
+
+			figcaption {
+				margin: 1rem 0;
+
+				h2 {
+					margin: 1rem 0;
+					font-size: 1.7rem;
+					@include text-normalBold;
+				}
+				p {
+					color: $soft-black;
+					width: 80%;
+				}
+
+				button {
+					margin-top: 1rem;
+					border: 1px solid black;
+					border-radius: 100px;
+					color: black;
+					padding: 0.5rem 0.8rem;
+				}
+			}
+		}
+	}
+
+	.giftcard-support {
+		background: $light-gray;
+		padding: 3rem 0;
+		@include displyFlex;
+
+		h3 {
+			font-size: 0.85rem;
+			margin-bottom: 1rem;
+			@include text-bold;
+		}
+		p {
+			max-width: 80%;
+		}
+		section {
+			margin: 1rem 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			max-width: 80%;
+
+			button:nth-child(1) {
+				margin-right: 1rem;
+			}
+
+			button:nth-child(3) {
+				margin-top: 1rem;
+			}
+
+			button {
+				color: black;
+				border: 1px solid black;
+				border-radius: 100px;
+				padding: 0.7rem 1rem;
+			}
+		}
+	}
+}
+
 .giftcard-nav {
 	position: relative;
 
@@ -11,68 +115,242 @@
 	}
 }
 
-// .giftcards {
-// 	img {
-// 		max-width: 50%;
-// 	}
+.giftcards {
+	img {
+		max-width: 92%;
+		border-radius: 5px;
+	}
 
-// 	.featured-giftcard {
-// 		border-radius: 10px;
-// 	}
-// 	.alice-carousel {
-// 		border: 1px solid black;
-// 	}
-// 	.alice-carousel__prev-btn,
-// 	.alice-carousel__next-btn {
-// 		position: absolute;
-// 		background: transparent;
-// 		color: white;
-// 		top: 20%;
-// 		display: block;
-// 		height: auto;
-// 		width: 4%;
-// 		text-align: center;
-// 		border-radius: 50%;
-// 	}
+	img + img {
+		margin-right: 100px;
+	}
 
-// 	.alice-carousel__prev-btn {
-// 		left: 5rem;
-// 	}
-// 	.alice-carousel__next-btn {
-// 		right: 0;
-// 	}
+	//
+	// style for each carousel
+	//
 
-// 	.alice-carousel__next-btn-item,
-// 	.alice-carousel__prev-btn-item {
-// 		color: $soft-black;
-// 		font-size: 1.5rem;
-// 		border-radius: 100%;
-// 		text-align: center;
-// 		cursor: pointer;
+	.alice-carousel__prev-btn,
+	.alice-carousel__next-btn {
+		position: absolute;
+		top: 10%;
+		background: transparent;
+		display: flex;
+		width: 40%;
+	}
 
-// 		display: flex;
-// 		align-items: center;
-// 		justify-content: center;
-// 		background: white;
-// 		-webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
-// 		-moz-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
-// 		box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
-// 	}
+	.alice-carousel__prev-btn {
+		justify-content: flex-start;
+	}
+	.alice-carousel__next-btn {
+		right: 0;
+		justify-content: flex-end;
+	}
 
-// 	.alice-carousel__next-btn-item:hover,
-// 	.alice-carousel__prev-btn-item:hover {
-// 		color: black;
-// 	}
-// }
+	.alice-carousel__next-btn-item,
+	.alice-carousel__prev-btn-item {
+		color: $soft-black;
+		font-size: 1.5rem;
+		cursor: pointer;
+		background: white;
+		padding: 0 0.7rem;
+		border-radius: 100%;
+		-webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+		box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+	}
 
-.gift-cards {
-	.featured-giftcard {
-		border-radius: 10px;
+	.alice-carousel__next-btn-item {
+		margin-right: 1rem;
+	}
+	.alice-carousel__prev-btn-item {
+		margin-left: 1.5rem;
+	}
+	.alice-carousel__next-btn-item:hover,
+	.alice-carousel__prev-btn-item:hover {
+		color: black;
+	}
+
+	.alice-carousel__dots {
+		display: none;
 	}
 }
-.alice-carousel {
+
+.featured-giftcards {
+	padding: 1.5rem 0;
+
+	button {
+		color: $green;
+		background: transparent;
+		border: none;
+		font-size: 0.9rem;
+		@include text-semibold;
+	}
+
+	.featured-heading {
+		@include centeredflex;
+		justify-content: space-between;
+		margin-bottom: 1.5rem;
+
+		h3 {
+			font-size: 0.85rem;
+		}
+	}
 }
-.alice-carousel_wrapper {
-	padding-left: 150px;
-	padding-right: 50px;
+
+.check-balance {
+	background: $light-blue;
+	padding: 2rem 0;
+
+	.check-balance-content {
+		h2 {
+			font-size: 1.6rem;
+			@include text-semibold;
+		}
+		p {
+			font-size: 1rem;
+		}
+		span {
+			color: $gold-color;
+		}
+
+		.title {
+			margin: 1.5rem 0;
+		}
+
+		button {
+			padding: 0.5rem 0.8rem;
+			border-radius: 100px;
+			border: 1px solid black;
+			background: transparent;
+			margin-right: 1rem;
+			@include text-semibold;
+			color: black;
+		}
+
+		.blackbutton {
+			background: black;
+			color: white;
+		}
+	}
+}
+
+.father-day-giftcard,
+.thank-you-giftcard,
+.birthday-giftcard,
+.graduation-giftcard,
+.pride-giftcard,
+.appreciation-giftcard,
+.teacher-appreciation-giftcard,
+.love-giftcard,
+.recognition-giftcard,
+.encouragement-giftcard,
+.anniversary-giftcard,
+.community-giftcard,
+.anytime-giftcard {
+	padding: 1.5rem 0;
+}
+@media screen and (min-width: 600px) {
+	.gift-card-wrapper {
+		.giftcard-support {
+			p {
+				max-width: 50%;
+			}
+			section {
+				margin: 1.5rem 0;
+				max-width: 80%;
+
+				button:nth-child(1) {
+					margin-right: 0;
+				}
+
+				button:nth-child(3) {
+					margin-top: 0;
+				}
+
+				button + button {
+					margin-left: 0.5rem;
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 700px) {
+	.gift-card-wrapper {
+		figure {
+			grid-template-columns: repeat(5, 22.4%);
+		}
+	}
+
+	.check-balance-content {
+		@include displyFlex;
+		justify-content: flex-start;
+		.title {
+			@include displyFlex;
+
+			h2 {
+				margin-right: 0.5rem;
+			}
+			p {
+				font-size: 1.3rem;
+				color: $soft-black;
+				@include text-semibold;
+			}
+		}
+
+		.check-bal-button {
+			margin-left: 2rem;
+		}
+	}
+}
+
+@media screen and(min-width:900px) {
+	.gift-card-wrapper {
+		.bulk-giftcard {
+			figure {
+				display: flex;
+				justify-content: space-between;
+
+				img {
+					width: 35%;
+				}
+
+				figcaption {
+					width: 60%;
+
+					p {
+						width: 60%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and(min-width:1100px) {
+	.gift-card-wrapper {
+		.giftcard-support {
+			p {
+				max-width: 35%;
+			}
+		}
+
+		.bulk-giftcard {
+			figure {
+				display: flex;
+				justify-content: space-between;
+
+				img {
+					width: 35%;
+				}
+
+				figcaption {
+					width: 60%;
+
+					p {
+						width: 60%;
+					}
+				}
+			}
+		}
+	}
 }

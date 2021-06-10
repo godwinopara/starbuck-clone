@@ -104,6 +104,7 @@ nav {
 			height: 100vh;
 			padding: 2rem 2rem;
 			background-color: white;
+			z-index: 1000;
 			transform: translate(120%, -3%);
 			transition: 0.5s ease-in;
 			.left-side-nav {

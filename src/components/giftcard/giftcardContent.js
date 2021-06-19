@@ -212,5 +212,4 @@ const giftCardContent = {
 	communityGiftCard,
 	anyTimeGiftCard,
 };
-
 export default giftCardContent;

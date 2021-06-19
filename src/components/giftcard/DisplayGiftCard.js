@@ -1,6 +1,5 @@
 import Button from "./Button";
 import AliceCarousel from "react-alice-carousel";
-
 const DisplayGiftCard = ({ heading, path, giftcard, className }) => {
 	const responsive = {
 		0: { items: 3.2 },

@@ -3,39 +3,53 @@ import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import Rewards from "./pages/Rewards";
 import GiftCard from "./pages/GiftCards";
-import Footer from "./components/footer/Footer";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import DisplayCard from "./pages/DisplayCard";
+import FullGiftCard from "./pages/FullGiftCard";
+import ScrollTop from "./components/ScrollTop";
+import Footer from "./components/footer/Footer";
+import SignUp from "./pages/SignUp";
+import JoinNow from "./pages/JoinNow";
+// import giftCardContent from "./components/giftcard/giftcardContent";
 
 library.add(fab, faAngleDown);
 
 function App() {
 	return (
-		<Router>
-			<div className="App">
-				<Switch>
-					<Route exact path="/">
-						<Home />
-					</Route>
-					<Route path="/menu">
-						<Menu />
-					</Route>
-					<Route exact path="/gift">
-						<GiftCard />
-					</Route>
-					<Route exact path="/gift/:id">
-						<DisplayCard />
-					</Route>
-					<Route path="/rewards">
-						<Rewards />
-					</Route>
-				</Switch>
+		<>
+			<Router>
+				<div className="App">
+					<ScrollTop>
+						<Switch>
+							<Route exact path="/">
+								<Home />
+							</Route>
+							<Route path="/menu">
+								<Menu />
+							</Route>
+							<Route exact path="/gift">
+								<GiftCard />
+							</Route>
+							<Route path="/rewards">
+								<Rewards />
+							</Route>
+							<Route path="/sign-in">
+								<SignUp />
+							</Route>
+							<Route path="/join-now">
+								<JoinNow />
+							</Route>
+							<Route exact path="/gift/:giftcard">
+								<FullGiftCard />
+							</Route>
+						</Switch>
+					</ScrollTop>
+				</div>
 				<Footer />
-			</div>
-		</Router>
+			</Router>
+		</>
 	);
 }
 

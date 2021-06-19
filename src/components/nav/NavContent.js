@@ -6,10 +6,10 @@ const leftSideLink = [
 
 const signInLink = [
 	{ path: "sign-in", name: "Sign in" },
-	{ path: "sign-up", name: "Join Now" },
+	{ path: "join-now", name: "Join Now" },
 ];
 
-const findStore = [{ path: "", name: "Find a Store" }];
+const findStore = [{ path: "find-store", name: "Find a Store" }];
 
 const navContent = { leftSideLink, signInLink, findStore };
 

@@ -1,14 +1,8 @@
 import NavBar from "../components/nav/NavBar";
 import BulkGiftCard from "../images/giftcards/bulk-gift-cards.webp";
-import AliceCarousel from "react-alice-carousel";
 import giftCardContent from "../components/giftcard/giftcardContent";
+import DisplayGiftCard from "../components/giftcard/DisplayGiftCard";
 const GiftCard = () => {
-	const responsive = {
-		0: { items: 3.2 },
-		568: { items: 3.5 },
-		1024: { items: 4.5 },
-	};
-
 	return (
 		<div className="gift-card-wrapper">
 			<header>
@@ -17,20 +11,13 @@ const GiftCard = () => {
 				</div>
 			</header>
 			<main>
-				<section className="featured-giftcards container">
-					<div className="heading ">
-						<h3>FEATURED</h3>
-						<button>See all</button>
-					</div>
-					<div className="giftcards">
-						<AliceCarousel
-							items={giftCardContent.featuredGiftCard}
-							responsive={responsive}
-							controlsStrategy="alternate"
-							mouseTracking
-						/>
-					</div>
-				</section>
+				<DisplayGiftCard
+					heading="FEATURED"
+					path="/gift/featured"
+					giftcard={giftCardContent.featuredGiftCard}
+					className="featured-giftcards"
+				/>
+
 				<section className="check-balance">
 					<div className="check-balance-content container">
 						<div className="title">
@@ -45,6 +32,7 @@ const GiftCard = () => {
 						</div>
 					</div>
 				</section>
+
 				<section className="father-day-giftcard container">
 					<div className="heading">
 						<h3>FATHER'S DAY</h3>
@@ -53,76 +41,37 @@ const GiftCard = () => {
 						<figure>{giftCardContent.fathersDayGiftCard}</figure>
 					</div>
 				</section>
-				<section className="thank-you-giftcard container">
-					<div className="heading">
-						<h3>THANK YOU</h3>
-						<button>See all</button>
-					</div>
-					<div className="giftcards">
-						<AliceCarousel
-							items={giftCardContent.thankYouGiftCard}
-							responsive={responsive}
-							controlsStrategy="alternate"
-							mouseTracking
-						/>
-					</div>
-				</section>
-				<section className="birthday-giftcard container">
-					<div className="heading">
-						<h3>BIRTHDAY</h3>
-						<button>See all</button>
-					</div>
-					<div className="giftcards">
-						<AliceCarousel
-							items={giftCardContent.birthdayGiftCard}
-							responsive={responsive}
-							controlsStrategy="alternate"
-							mouseTracking
-						/>
-					</div>
-				</section>
-				<section className="graduation-giftcard container">
-					<div className="heading">
-						<h3>GRADUATION</h3>
-						<button>See all</button>
-					</div>
-					<div className="giftcards">
-						<AliceCarousel
-							items={giftCardContent.graduationGiftCard}
-							responsive={responsive}
-							controlsStrategy="alternate"
-							mouseTracking
-						/>
-					</div>
-				</section>
-				<section className="pride-giftcard container">
-					<div className="heading">
-						<h3>PRIDE</h3>
-						<button>See all</button>
-					</div>
-					<div className="giftcards">
-						<AliceCarousel
-							items={giftCardContent.prideGiftCard}
-							responsive={responsive}
-							controlsStrategy="alternate"
-							mouseTracking
-						/>
-					</div>
-				</section>
-				<section className="appreciation-giftcard container">
-					<div className="heading">
-						<h3>APPRECIATION</h3>
-						<button>See all</button>
-					</div>
-					<div className="giftcards">
-						<AliceCarousel
-							items={giftCardContent.appreciationGiftCard}
-							responsive={responsive}
-							controlsStrategy="alternate"
-							mouseTracking
-						/>
-					</div>
-				</section>
+				<DisplayGiftCard
+					heading="THANK YOU"
+					path="/gift/thank-you"
+					className="thank-you-giftcard"
+					giftcard={giftCardContent.thankYouGiftCard}
+				/>
+				<DisplayGiftCard
+					heading="BIRTHDAY"
+					path="/gift/birthday"
+					className="birthday-giftcard"
+					giftcard={giftCardContent.birthdayGiftCard}
+				/>
+				<DisplayGiftCard
+					heading="GRADUATION"
+					path="/gift/gradutaion"
+					className="graduation-giftcard"
+					giftcard={giftCardContent.graduationGiftCard}
+				/>
+				<DisplayGiftCard
+					heading="PRIDE"
+					path="/gift/pride"
+					className="pride-giftcard"
+					giftcard={giftCardContent.prideGiftCard}
+				/>
+				<DisplayGiftCard
+					heading="APPRICIATION"
+					path="/gift/appreciation"
+					className="appreciation-giftcard"
+					giftcard={giftCardContent.appreciationGiftCard}
+				/>
+
 				<section className="teacher-appreciation-giftcard container">
 					<div className="heading">
 						<h3>TEACHER APPRECIATION</h3>
@@ -131,62 +80,31 @@ const GiftCard = () => {
 						<figure>{giftCardContent.teacherAppreciationGiftCard}</figure>
 					</div>
 				</section>
-				<section className="love-giftcard container">
-					<div className="heading">
-						<h3>LOVE</h3>
-						<button>See all</button>
-					</div>
-					<div className="giftcards">
-						<AliceCarousel
-							items={giftCardContent.loveGiftCard}
-							responsive={responsive}
-							controlsStrategy="alternate"
-							mouseTracking
-						/>
-					</div>
-				</section>
-				<section className="recogniton-giftcard container">
-					<div className="heading">
-						<h3>RECOGNITION</h3>
-						<button>See all</button>
-					</div>
-					<div className="giftcards">
-						<AliceCarousel
-							items={giftCardContent.recognitonGiftCard}
-							responsive={responsive}
-							controlsStrategy="alternate"
-							mouseTracking
-						/>
-					</div>
-				</section>
-				<section className="encouragement-giftcard container">
-					<div className="heading">
-						<h3>ENCOURAGEMENT</h3>
-						<button>See all</button>
-					</div>
-					<div className="giftcards">
-						<AliceCarousel
-							items={giftCardContent.encouragementGiftCard}
-							responsive={responsive}
-							controlsStrategy="alternate"
-							mouseTracking
-						/>
-					</div>
-				</section>
-				<section className="workplace-giftcard container">
-					<div className="heading">
-						<h3>WORKPLACE</h3>
-						<button>See all</button>
-					</div>
-					<div className="giftcards">
-						<AliceCarousel
-							items={giftCardContent.workplaceGiftCard}
-							responsive={responsive}
-							controlsStrategy="alternate"
-							mouseTracking
-						/>
-					</div>
-				</section>
+				<DisplayGiftCard
+					heading="LOVE"
+					path="/gift/love"
+					className="love-giftcard"
+					giftcard={giftCardContent.loveGiftCard}
+				/>
+				<DisplayGiftCard
+					heading="RECOGNITION"
+					path="/gift/recognition"
+					className="recognition-giftcard"
+					giftcard={giftCardContent.recognitonGiftCard}
+				/>
+				<DisplayGiftCard
+					heading="ENCOURAGEMENT"
+					path="/gift/encouragement"
+					className="encouragement-giftcard"
+					giftcard={giftCardContent.encouragementGiftCard}
+				/>
+				<DisplayGiftCard
+					heading="WORKPLACE"
+					path="/gift/workplace"
+					className="workpalce-giftcard"
+					giftcard={giftCardContent.workplaceGiftCard}
+				/>
+
 				<section className="anniversary-giftcard container">
 					<div className="heading">
 						<h3>50TH ANNIVERSARY</h3>
@@ -195,20 +113,13 @@ const GiftCard = () => {
 						<figure>{giftCardContent.anniversaryGiftCard}</figure>
 					</div>
 				</section>
-				<section className="community-giftcard container">
-					<div className="heading">
-						<h3>COMMUNITY</h3>
-						<button>See all</button>
-					</div>
-					<div className="giftcards">
-						<AliceCarousel
-							items={giftCardContent.communityGiftCard}
-							responsive={responsive}
-							controlsStrategy="alternate"
-							mouseTracking
-						/>
-					</div>
-				</section>
+				<DisplayGiftCard
+					heading="COMMUNITY"
+					path="/gift/community"
+					className="community-giftcard"
+					giftcard={giftCardContent.communityGiftCard}
+				/>
+
 				<section className="anytime-giftcard container">
 					<div className="heading">
 						<h3>ANYTIME</h3>

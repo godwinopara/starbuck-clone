@@ -3,6 +3,12 @@
 // general style for the gift card page
 
 .gift-card-wrapper {
+	header {
+		position: sticky;
+		background: white;
+		z-index: 1;
+		top: 0;
+	}
 	.container {
 		width: 91%;
 	}
@@ -149,11 +155,14 @@
 	.alice-carousel__next-btn-item,
 	.alice-carousel__prev-btn-item {
 		color: $soft-black;
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 		cursor: pointer;
 		background: white;
-		padding: 0 0.7rem;
+		padding: 0 0.5rem;
 		border-radius: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		-webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
 		-moz-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
 		box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);

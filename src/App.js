@@ -8,6 +8,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import DisplayCard from "./pages/DisplayCard";
 
 library.add(fab, faAngleDown);
 
@@ -22,8 +23,11 @@ function App() {
 					<Route path="/menu">
 						<Menu />
 					</Route>
-					<Route path="/gift">
+					<Route exact path="/gift">
 						<GiftCard />
+					</Route>
+					<Route exact path="/gift/:id">
+						<DisplayCard />
 					</Route>
 					<Route path="/rewards">
 						<Rewards />

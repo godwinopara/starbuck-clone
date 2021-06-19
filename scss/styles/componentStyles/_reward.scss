@@ -3,6 +3,12 @@ $img-mobile: "/src/images/reward-hero-mobile_2021.jpg";
 $img-desktop: "/src/components/home/home-images/starbuck-small-star.webp";
 
 .rewards-container {
+	header {
+		position: sticky;
+		top: 0;
+		z-index: 1;
+		background: white;
+	}
 	.reward-nav {
 		position: relative;
 	}

@@ -8,7 +8,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import FullGiftCard from "./pages/FullGiftCard";
-import ScrollTop from "./components/ScrollTop";
+import ScrollTop from "./components/ThirdParty/ScrollTop";
 import Footer from "./components/footer/Footer";
 import SignUp from "./pages/SignUp";
 import JoinNow from "./pages/JoinNow";

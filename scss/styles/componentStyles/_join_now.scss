@@ -1,0 +1,140 @@
+@import "../reuseAbleStyles/default";
+.join-now {
+	header {
+		.nav-links,
+		.show-nav,
+		.left-side-nav,
+		.hamburger,
+		.right-side-nav {
+			display: none;
+		}
+	}
+	main {
+		max-width: 500px;
+	}
+	p {
+		color: $soft-black;
+	}
+	&-heading {
+		margin: 1rem auto;
+
+		h3 {
+			font-size: 1.5rem;
+			@include text-bold;
+			padding-bottom: 1rem;
+		}
+
+		h4 {
+			display: none;
+		}
+	}
+
+	form {
+		input {
+			margin-bottom: 1rem;
+			width: 100%;
+			padding: 1rem 0 1rem 1rem;
+			outline: none;
+			border-radius: 10px;
+			border: none;
+			border: 1px solid $soft-black;
+			font-size: 1rem;
+			color: black;
+		}
+
+		h4 {
+			font-size: 1rem;
+			margin-bottom: 2rem;
+		}
+		h5 {
+			font-size: 0.8rem;
+			margin: 2rem 0;
+			color: $soft-black;
+		}
+		.username {
+			margin: 1rem 0 2rem;
+		}
+
+		.have-giftcard {
+			margin: 1rem 0;
+
+			p {
+				margin: 1rem 0;
+			}
+			h5 {
+				text-decoration: underline;
+				color: $green;
+			}
+		}
+
+		.keep-up-to-date {
+			.email-subscription {
+				display: flex;
+				justify-content: flex-start;
+				align-items: flex-start;
+				margin: 1rem 0;
+			}
+
+			input {
+				padding: 2rem;
+				width: 5%;
+				margin-right: 1rem;
+			}
+			p {
+				color: black;
+			}
+			span {
+				color: $soft-black;
+				display: block;
+				padding: 1rem 0;
+			}
+		}
+		.terms-of-use {
+			&-input {
+				display: flex;
+				justify-content: flex-start;
+				align-items: flex-start;
+
+				input {
+					height: 1.5rem;
+					width: 5%;
+				}
+			}
+		}
+		.button-submit {
+			text-align: right;
+			margin: 1rem 0;
+		}
+		button {
+			padding: 1rem 2rem;
+			font-size: 1.2rem;
+			border-radius: 100px;
+			margin: 1rem 0;
+			border: none;
+			background-color: $green;
+			box-shadow: 1px 1px 10px #727070;
+			color: #fff;
+			@include text-bold;
+		}
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.join-now {
+		h3 {
+			margin-bottom: 1.5rem;
+			font-size: 2rem;
+		}
+
+		&-heading {
+			text-align: center;
+			margin-bottom: 2rem;
+		}
+
+		form {
+			box-shadow: 1px 1px 10px #727070;
+			border-radius: 1rem;
+			padding: 2rem;
+		}
+	}
+}

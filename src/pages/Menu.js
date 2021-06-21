@@ -3,6 +3,7 @@ import NavBar from "../components/nav/NavBar";
 import menuContent from "../components/menu/menuContent";
 import MenuList from "../components/menu/MenuList";
 import MenuAsideList from "../components/menu/MenuAsideList";
+import Footer from "../components/footer/Footer";
 const Menu = () => {
 	return (
 		<>
@@ -76,6 +77,7 @@ const Menu = () => {
 					</div>
 				</main>
 			</div>
+			<Footer />
 		</>
 	);
 };

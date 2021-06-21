@@ -2,6 +2,7 @@ import NavBar from "../components/nav/NavBar";
 import BulkGiftCard from "../images/giftcards/bulk-gift-cards.webp";
 import giftCardContent from "../components/giftcard/giftcardContent";
 import DisplayGiftCard from "../components/giftcard/DisplayGiftCard";
+import Footer from "../components/footer/Footer";
 const GiftCard = () => {
 	return (
 		<>
@@ -162,6 +163,7 @@ const GiftCard = () => {
 					</div>
 				</main>
 			</div>
+			<Footer />
 		</>
 	);
 };

@@ -4,6 +4,7 @@ import Product from "../components/home/Product";
 import Terms from "../components/home/Terms";
 import informations from "../components/home/termsText";
 import NavBar from "../components/nav/NavBar";
+import Footer from "../components/footer/Footer";
 
 const Home = () => {
 	return (
@@ -28,6 +29,7 @@ const Home = () => {
 					<Terms information={informations} />
 				</div>
 			</main>
+			<Footer />
 		</>
 	);
 };

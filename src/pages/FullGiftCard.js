@@ -2,195 +2,98 @@ import NavBar from "../components/nav/NavBar";
 import giftCardContent from "../components/giftcard/giftcardContent";
 import { useParams } from "react-router-dom";
 
+const FullGiftCard = ({ allGiftCards, giftcardName }) => {
+	return (
+		<>
+			<div className="featured-container">
+				<header>
+					<div className="giftcard-nav">
+						<NavBar />
+					</div>
+				</header>
+				<main className="container">
+					<h2>{giftcardName}</h2>
+					<figure>{allGiftCards}</figure>
+				</main>
+			</div>
+		</>
+	);
+};
+
 function DisplayCard() {
 	const { giftcard } = useParams();
 
 	if (giftcard === "thankYouGiftCard") {
 		return (
-			<>
-				<div className="featured-container">
-					<header>
-						<div className="giftcard-nav">
-							<NavBar />
-						</div>
-					</header>
-					<main className="container">
-						<h2>THANK YOU</h2>
-						<figure>{giftCardContent.thankYouGiftCard}</figure>
-					</main>
-				</div>
-			</>
+			<FullGiftCard
+				allGiftCards={giftCardContent.thankYouGiftCard}
+				giftcardName="THANK YOU"
+			/>
 		);
 	}
 
 	if (giftcard === "featuredGiftCard") {
 		return (
-			<>
-				<div className="featured-container">
-					<header>
-						<div className="giftcard-nav">
-							<NavBar />
-						</div>
-					</header>
-					<main className="container">
-						<h2>FEATURED</h2>
-						<figure>{giftCardContent.featuredGiftCard}</figure>
-					</main>
-				</div>
-			</>
+			<FullGiftCard allGiftCards={giftCardContent.featuredGiftCard} giftcardName="FEATURED" />
 		);
 	}
 	if (giftcard === "birthdayGiftCard") {
 		return (
-			<>
-				<div className="featured-container">
-					<header>
-						<div className="giftcard-nav">
-							<NavBar />
-						</div>
-					</header>
-					<main className="container">
-						<h2>BIRTHDAY</h2>
-						<figure>{giftCardContent.birthdayGiftCard}</figure>
-					</main>
-				</div>
-			</>
+			<FullGiftCard allGiftCards={giftCardContent.birthdayGiftCard} giftcardName="BIRTHDAY" />
 		);
 	}
 	if (giftcard === "graduationGiftCard") {
 		return (
-			<>
-				<div className="featured-container">
-					<header>
-						<div className="giftcard-nav">
-							<NavBar />
-						</div>
-					</header>
-					<main className="container">
-						<h2>GRADUATION</h2>
-						<figure>{giftCardContent.graduationGiftCard}</figure>
-					</main>
-				</div>
-			</>
+			<FullGiftCard
+				allGiftCards={giftCardContent.graduationGiftCard}
+				giftcardName="GRADUATION"
+			/>
 		);
 	}
 	if (giftcard === "prideGiftCard") {
-		return (
-			<>
-				<div className="featured-container">
-					<header>
-						<div className="giftcard-nav">
-							<NavBar />
-						</div>
-					</header>
-					<main className="container">
-						<h2>PRIDE</h2>
-						<figure>{giftCardContent.prideGiftCard}</figure>
-					</main>
-				</div>
-			</>
-		);
+		return <FullGiftCard allGiftCards={giftCardContent.prideGiftCard} giftcardName="PRIDE" />;
 	}
-	if (giftcard === "appriciationGiftCard") {
+	if (giftcard === "appreciationGiftCard") {
 		return (
-			<>
-				<div className="featured-container">
-					<header>
-						<div className="giftcard-nav">
-							<NavBar />
-						</div>
-					</header>
-					<main className="container">
-						<h2>APPRICIATION</h2>
-						<figure>{giftCardContent.appriciationGiftCard}</figure>
-					</main>
-				</div>
-			</>
+			<FullGiftCard
+				allGiftCards={giftCardContent.appreciationGiftCard}
+				giftcardName="APPRECIATION"
+			/>
 		);
 	}
 	if (giftcard === "loveGiftCard") {
-		return (
-			<>
-				<div className="featured-container">
-					<header>
-						<div className="giftcard-nav">
-							<NavBar />
-						</div>
-					</header>
-					<main className="container">
-						<h2>LOVE</h2>
-						<figure>{giftCardContent.loveGiftCard}</figure>
-					</main>
-				</div>
-			</>
-		);
+		return <FullGiftCard allGiftCards={giftCardContent.loveGiftCard} giftcardName="LOVE" />;
 	}
 	if (giftcard === "recognitionGiftCard") {
 		return (
-			<>
-				<div className="featured-container">
-					<header>
-						<div className="giftcard-nav">
-							<NavBar />
-						</div>
-					</header>
-					<main className="container">
-						<h2>RECOGNITION</h2>
-						<figure>{giftCardContent.recognitonGiftCard}</figure>
-					</main>
-				</div>
-			</>
+			<FullGiftCard
+				allGiftCards={giftCardContent.recognitonGiftCard}
+				giftcardName="RECOGNITION"
+			/>
 		);
 	}
 	if (giftcard === "encouragementGiftCard") {
 		return (
-			<>
-				<div className="featured-container">
-					<header>
-						<div className="giftcard-nav">
-							<NavBar />
-						</div>
-					</header>
-					<main className="container">
-						<h2>ENCOURAGMENT</h2>
-						<figure>{giftCardContent.encouragementGiftCard}</figure>
-					</main>
-				</div>
-			</>
+			<FullGiftCard
+				allGiftCards={giftCardContent.encouragementGiftCard}
+				giftcardName="ENCOURAGMENT"
+			/>
 		);
 	}
 	if (giftcard === "workplaceGiftCard") {
 		return (
-			<>
-				<div className="featured-container">
-					<header>
-						<div className="giftcard-nav">
-							<NavBar />
-						</div>
-					</header>
-					<main className="container">
-						<h2>WORKPLACE</h2>
-						<figure>{giftCardContent.workplaceGiftCard}</figure>
-					</main>
-				</div>
-			</>
+			<FullGiftCard
+				allGiftCards={giftCardContent.workplaceGiftCard}
+				giftcardName="WORKPLACE"
+			/>
 		);
 	}
 	if (giftcard === "communityGiftCard") {
 		return (
-			<>
-				<div className="featured-container">
-					<header>
-						<div className="giftcard-nav">
-							<NavBar />
-						</div>
-					</header>
-					<main className="container">
-						<h2>COMMUNITY</h2>
-						<figure>{giftCardContent.communityGiftCard}</figure>
-					</main>
-				</div>
-			</>
+			<FullGiftCard
+				allGiftCards={giftCardContent.communityGiftCard}
+				giftcardName="COMMUNITY"
+			/>
 		);
 	}
 }

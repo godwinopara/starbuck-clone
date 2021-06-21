@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "../components/nav/NavBar";
+import FooterSignup from "../components/footer/FooterSignup";
 
 function JoinNow() {
 	return (
@@ -97,6 +98,7 @@ function JoinNow() {
 					</div>
 				</form>
 			</main>
+			<FooterSignup />
 		</div>
 	);
 }

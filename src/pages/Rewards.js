@@ -6,6 +6,7 @@ import number1Image from "../images/number1.webp";
 import number2Image from "../images/number2.webp";
 import number3Image from "../images/number3.webp";
 import ListPaymentMethods from "../components/reward/ListPaymentMethods";
+import Footer from "../components/footer/Footer";
 const Rewards = () => {
 	return (
 		<>
@@ -257,6 +258,7 @@ const Rewards = () => {
 					</section>
 				</main>
 			</div>
+			<Footer />
 		</>
 	);
 };

@@ -1,0 +1,113 @@
+@import "../componentStyles/default";
+.sign-in {
+	#sign-in-nav {
+		.nav-links,
+		.show-nav,
+		.left-side-nav,
+		.hamburger,
+		.right-side-nav {
+			display: none;
+		}
+	}
+	main {
+		margin-top: 1rem;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+		@include text-bold;
+		text-align: center;
+		margin: 2rem 0 3rem;
+	}
+
+	form {
+		max-width: 500px;
+		margin: auto;
+		box-shadow: 1px 1px 10px #727070;
+		padding: 4rem 3rem;
+		border-radius: 10px;
+	}
+
+	label {
+		display: flex;
+		align-items: center;
+		margin: 1rem 0;
+		input[type="checkbox"] {
+			margin-right: 0.6rem;
+			height: 1.5rem;
+			width: 1.5rem;
+			outline: none;
+		}
+
+		span {
+			@include text-bold;
+			color: $green;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		span:hover {
+			text-decoration: none;
+		}
+	}
+
+	.forget-account-details {
+		margin: 2rem 0;
+		p {
+			@include text-bold;
+			color: $green;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		p:hover {
+			text-decoration: none;
+		}
+		p + p {
+			margin-top: 0.3rem;
+		}
+	}
+
+	.sign-in-btn {
+		text-align: right;
+
+		input {
+			padding: 1rem 2rem;
+			border-radius: 30px;
+			font-size: 1.3rem;
+			@include text-bold;
+			background: $green;
+			color: white;
+			border: none;
+			cursor: pointer;
+		}
+	}
+
+	.join-starbuck {
+		margin: 3rem auto;
+		text-align: center;
+		background: rgba(212, 233, 226, 0.33);
+		padding: 2rem 0;
+		border-radius: 5px;
+		max-width: 500px;
+
+		h4 {
+			color: $green;
+			margin-bottom: 0.8rem;
+		}
+
+		p {
+			max-width: 80%;
+			margin: auto;
+			font-size: 1rem;
+		}
+
+		input[type="button"] {
+			padding: 0.5rem 1.5rem;
+			margin-top: 1.5rem;
+			border-radius: 20px;
+			border: 1px solid $green;
+			color: $green;
+			@include text-semibold;
+			background: transparent;
+		}
+	}
+}

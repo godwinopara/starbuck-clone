@@ -560,10 +560,11 @@ footer .copy-right p {
     justify-content: center;
   }
   .footer-sign-up-wrapper .copy-right {
-    margin-left: 7rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
   }
   .footer-sign-up-wrapper .copy-right p {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1rem;
   }
   .footer-sign-up-links li + li {
@@ -571,11 +572,23 @@ footer .copy-right p {
   }
   .footer-sign-up-links li {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
   }
   .find-store-btn button {
     margin-right: 3rem;
   }
+}
+
+.input-component input {
+  margin-bottom: 1rem;
+  padding: 1rem 0 1rem 1rem;
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.56);
+  font-size: 1rem;
+  color: black;
 }
 
 .products-container button {
@@ -2031,18 +2044,6 @@ footer .copy-right p {
   display: none;
 }
 
-.join-now form input {
-  margin-bottom: 1rem;
-  width: 100%;
-  padding: 1rem 0 1rem 1rem;
-  outline: none;
-  border-radius: 10px;
-  border: none;
-  border: 1px solid rgba(0, 0, 0, 0.56);
-  font-size: 1rem;
-  color: black;
-}
-
 .join-now form h4 {
   font-size: 1rem;
   margin-bottom: 2rem;
@@ -2136,6 +2137,121 @@ footer .copy-right p {
     border-radius: 1rem;
     padding: 2rem;
   }
+}
+
+.sign-in #sign-in-nav .nav-links,
+.sign-in #sign-in-nav .show-nav,
+.sign-in #sign-in-nav .left-side-nav,
+.sign-in #sign-in-nav .hamburger,
+.sign-in #sign-in-nav .right-side-nav {
+  display: none;
+}
+
+.sign-in main {
+  margin-top: 1rem;
+}
+
+.sign-in h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem 0 3rem;
+}
+
+.sign-in form {
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 1px 1px 10px #727070;
+  padding: 4rem 3rem;
+  border-radius: 10px;
+}
+
+.sign-in label {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.sign-in label input[type="checkbox"] {
+  margin-right: 0.6rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  outline: none;
+}
+
+.sign-in label span {
+  font-weight: 700;
+  color: #008248;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.sign-in label span:hover {
+  text-decoration: none;
+}
+
+.sign-in .forget-account-details {
+  margin: 2rem 0;
+}
+
+.sign-in .forget-account-details p {
+  font-weight: 700;
+  color: #008248;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.sign-in .forget-account-details p:hover {
+  text-decoration: none;
+}
+
+.sign-in .forget-account-details p + p {
+  margin-top: 0.3rem;
+}
+
+.sign-in .sign-in-btn {
+  text-align: right;
+}
+
+.sign-in .sign-in-btn input {
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background: #008248;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.sign-in .join-starbuck {
+  margin: 3rem auto;
+  text-align: center;
+  background: rgba(212, 233, 226, 0.33);
+  padding: 2rem 0;
+  border-radius: 5px;
+  max-width: 500px;
+}
+
+.sign-in .join-starbuck h4 {
+  color: #008248;
+  margin-bottom: 0.8rem;
+}
+
+.sign-in .join-starbuck p {
+  max-width: 80%;
+  margin: auto;
+  font-size: 1rem;
+}
+
+.sign-in .join-starbuck input[type="button"] {
+  padding: 0.5rem 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 20px;
+  border: 1px solid #008248;
+  color: #008248;
+  font-weight: 600;
+  background: transparent;
 }
 
 *,

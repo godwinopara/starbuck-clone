@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../components/nav/NavBar";
 import FooterSignup from "../components/footer/FooterSignup";
+import Input from "../components/input/Input";
 
 function JoinNow() {
 	return (
@@ -22,25 +23,21 @@ function JoinNow() {
 					<div className="username">
 						<h4>Personal Information</h4>
 
-						<input
+						{/* <input
 							type="text"
 							name="firstname"
 							id="firstname"
 							placeholder="First Name"
-						/>
+						/> */}
+						<Input type="text" name="firstname" placeholder="First Name" />
 						<br />
-						<input type="text" name="lastname" id="lastname" placeholder="Last Name" />
+						<Input type="text" name="lastname" placeholder="Last Name" />
 					</div>
 					<div className="accout-security">
 						<h4>Account Security</h4>
-						<input type="email" name="email" id="email" placeholder="Email Address" />
+						<Input type="email" name="email" placeholder="Email Address" />
 						<br />
-						<input
-							type="password"
-							name="password"
-							id="password"
-							placeholder="Password"
-						/>
+						<Input type="password" name="password" placeholder="Password" />
 					</div>
 					<div className="have-giftcard">
 						<div className="title">
@@ -49,19 +46,13 @@ function JoinNow() {
 						</div>
 
 						<div className="have-giftcard-input">
-							<input
+							<Input
 								type="number"
 								name="card-number"
-								id="card-number"
 								placeholder="Card number (16 digits)"
 							/>
 							<br />
-							<input
-								type="number"
-								name="security-code"
-								id="security-code"
-								placeholder="Security code"
-							/>
+							<Input type="number" name="security-code" placeholder="Security code" />
 						</div>
 					</div>
 

@@ -49,10 +49,11 @@
 
 	.footer-sign-up-wrapper {
 		.copy-right {
-			margin-left: 7rem;
+			margin-left: 5rem;
+			margin-top: 2rem;
 
 			p {
-				@include text-semibold;
+				@include text-normalBold;
 				font-size: 1rem;
 			}
 		}
@@ -64,7 +65,7 @@
 		}
 		li {
 			font-size: 1rem;
-			@include text-semibold;
+			@include text-normalBold;
 		}
 	}
 

@@ -9,8 +9,8 @@ import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import FullGiftCard from "./pages/FullGiftCard";
 import ScrollTop from "./components/ThirdParty/ScrollTop";
-import SignUp from "./pages/SignUp";
 import JoinNow from "./pages/JoinNow";
+import SignIn from "./pages/SignIn";
 // import giftCardContent from "./components/giftcard/giftcardContent";
 
 library.add(fab, faAngleDown);
@@ -35,7 +35,7 @@ function App() {
 								<Rewards />
 							</Route>
 							<Route path="/sign-in">
-								<SignUp />
+								<SignIn />
 							</Route>
 							<Route path="/join-now">
 								<JoinNow />

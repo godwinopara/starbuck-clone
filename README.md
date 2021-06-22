@@ -5,14 +5,16 @@
     functionalities
 </h3>
 
-<h2>SCREENSHOTS</h1>
+<h2>SCREENSHOTS</h5>
 
-<h2>Homepage</h2>
-<h2>Menu</h2>
-<h2>Rewards</h2>
-<h2>Giftcards</h2>
-<h2>Sign In</h2>
-<h2>Join Now</h2>
+<h5>Homepage</h5>
+<h5>Menu</h5>
+<h5>Rewards</h5>
+<h5>Giftcards</h5>
+<h5>Sign In</h5>
+<h5>Join Now</h5>
+    
+<h2>Live Demo[https://starbuck-clone.netlify.app]</h2>
 
 <h2>Built With</h2>
 <li>React</li>

@@ -1,11 +1,11 @@
 <h1>STARBUCK CLONE<h1>
 
-<p>
+<em>
     Challenged my self on a project to clone starbuck website and some of its
     functionalities
-</p>
+</em>
 
-<h1>SCREENSHOTS</h1>
+<h4>SCREENSHOTS</h1>
 
 <h2>Homepage</h2>
 <h2>Menu</h2>

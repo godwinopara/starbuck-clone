@@ -25,7 +25,7 @@
 <h2>What i Learnt</h2>
 <li>
     learnt how to display different pages in react on different viewport
-   i would usually do that with display:none and twik the css with media-query
+   i would usually do that with "display:none" and twik the css with media-query
    outside react
 </li>
 <li>

@@ -5,12 +5,15 @@
 
 ## SCREENSHOTS
 
-### Homepage
-### Menu
-### Rewards
-### Giftcards
-### Sign In
-### Join Now
+#### Homepage
+#### Menu
+#### Rewards
+#### Giftcards
+#### Sign In
+#### Join Now
+
+
+### Link
     
 - [Live Demo](https://starbuck-clone.netlify.app)
 

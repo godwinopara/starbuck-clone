@@ -1,7 +1,7 @@
-#STARBUCK CLONE
+# STARBUCK CLONE
 
 
-###Challenged my self on a project to clone starbuck website and some of its functionalities
+-  Challenged my self on a project to clone starbuck website and some of its functionalities
 
 ## SCREENSHOTS
 

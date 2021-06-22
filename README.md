@@ -1,38 +1,33 @@
-<h1>STARBUCK CLONE<h1>
+#STARBUCK CLONE
 
-<h3>
-    Challenged my self on a project to clone starbuck website and some of its
-    functionalities
-</h3>
 
-<h2>SCREENSHOTS</h5>
+###Challenged my self on a project to clone starbuck website and some of its functionalities
 
-<h5>Homepage</h5>
-<h5>Menu</h5>
-<h5>Rewards</h5>
-<h5>Giftcards</h5>
-<h5>Sign In</h5>
-<h5>Join Now</h5>
+## SCREENSHOTS
+
+### Homepage
+### Menu
+### Rewards
+### Giftcards
+### Sign In
+### Join Now
     
-<h2>Live Demo[https://starbuck-clone.netlify.app]</h2>
+- [Live Demo](https://starbuck-clone.netlify.app)
 
-<h2>Built With</h2>
-<li>React</li>
-<li>React Hooks</li>
-<li>Sass</li>
-<li>Alice Carousel library for the giftcard slide</li>
-<li>Grid</li>
-<li>FlexBox</li>
+### Built
+-  React
+-  React Hooks
+-  Sass
+-  Alice Carousel library for the giftcard slide
+-  Grid
+-  FlexBox
 
-<h2>What i Learnt</h2>
-<li>
-    learnt how to display different pages in react on different viewport
+### What i Learnt
+-  learnt how to display different pages in react on different viewport
    i would usually do that with "display:none" and twik the css with media-query
    outside react
-</li>
-<li>
-    learnt how to search for and use packages in the npm registry
-</li>
-<li>
-    learnt how to use install and use sass in a react project
-</li>
+
+-  learnt how to search for and use packages in the npm registry
+
+-  learnt how to use install and use sass in a react project
+

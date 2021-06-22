@@ -35,14 +35,14 @@ const GiftCard = () => {
 						</div>
 					</section>
 
-					<section className="father-day-giftcard container">
+					{/* <section className="father-day-giftcard container">
 						<div className="heading">
 							<h3>FATHER'S DAY</h3>
 						</div>
 						<div className="giftcards">
 							<figure>{giftCardContent.fathersDayGiftCard}</figure>
 						</div>
-					</section>
+					</section> */}
 					<DisplayGiftCard
 						heading="THANK YOU"
 						path="/gift/thankYouGiftCard"
@@ -74,14 +74,14 @@ const GiftCard = () => {
 						giftcard={giftCardContent.appreciationGiftCard}
 					/>
 
-					<section className="teacher-appreciation-giftcard container">
+					{/* <section className="teacher-appreciation-giftcard container">
 						<div className="heading">
 							<h3>TEACHER APPRECIATION</h3>
 						</div>
 						<div className="giftcards">
 							<figure>{giftCardContent.teacherAppreciationGiftCard}</figure>
 						</div>
-					</section>
+					</section> */}
 					<DisplayGiftCard
 						heading="LOVE"
 						path="/gift/loveGiftCard"
@@ -107,14 +107,14 @@ const GiftCard = () => {
 						giftcard={giftCardContent.workplaceGiftCard}
 					/>
 
-					<section className="anniversary-giftcard container">
+					{/* <section className="anniversary-giftcard container">
 						<div className="heading">
 							<h3>50TH ANNIVERSARY</h3>
 						</div>
 						<div className="giftcards">
 							<figure>{giftCardContent.anniversaryGiftCard}</figure>
 						</div>
-					</section>
+					</section> */}
 					<DisplayGiftCard
 						heading="COMMUNITY"
 						path="/gift/communityGiftCard"
@@ -126,9 +126,7 @@ const GiftCard = () => {
 						<div className="heading">
 							<h3>ANYTIME</h3>
 						</div>
-						<div className="giftcards">
-							<figure>{giftCardContent.anyTimeGiftCard}</figure>
-						</div>
+						<div className="giftcards"></div>
 					</section>
 					<section className="bulk-giftcard">
 						<div className="container">

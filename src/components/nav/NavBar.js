@@ -29,7 +29,10 @@ const NavBar = () => {
 									icon={faMapMarkerAlt}
 									className="location-marker"
 								/>
-								<NavItem items={NavContent.findStore} />
+
+								<ul className="find-store">
+									<li>Find Store</li>
+								</ul>
 							</div>
 							<div className="signup">
 								<NavItem items={NavContent.signInLink} />

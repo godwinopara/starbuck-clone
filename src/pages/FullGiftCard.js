@@ -1,6 +1,7 @@
 import NavBar from "../components/nav/NavBar";
 import giftCardContent from "../components/giftcard/giftcardContent";
 import { useParams } from "react-router-dom";
+import CardList from "../components/giftcard/CardList";
 
 const FullGiftCard = ({ allGiftCards, giftcardName }) => {
 	return (
@@ -13,7 +14,7 @@ const FullGiftCard = ({ allGiftCards, giftcardName }) => {
 				</header>
 				<main className="container">
 					<h2>{giftcardName}</h2>
-					<figure>{allGiftCards}</figure>
+					<CardList cards={allGiftCards} />
 				</main>
 			</div>
 		</>

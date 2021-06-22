@@ -1,14 +1,11 @@
-import { Link } from "react-router-dom";
 const MenuAsideList = ({ items }) => {
-	const productLinks = items.map((item) => {
+	const productLinks = items.map((item, idx) => {
 		return (
-			<div className="aside">
+			<div key={idx} className="aside">
 				<h4>{item.title}</h4>
 				<ul>
-					{item.links.map((link) => (
-						<li>
-							<Link to={`/${item.path}`}>{link}</Link>
-						</li>
+					{item.links.map((link, index) => (
+						<li key={index}>{link}</li>
 					))}
 				</ul>
 			</div>

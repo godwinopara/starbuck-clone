@@ -11,7 +11,6 @@ import FullGiftCard from "./pages/FullGiftCard";
 import ScrollTop from "./components/ThirdParty/ScrollTop";
 import JoinNow from "./pages/JoinNow";
 import SignIn from "./pages/SignIn";
-// import giftCardContent from "./components/giftcard/giftcardContent";
 
 library.add(fab, faAngleDown);
 

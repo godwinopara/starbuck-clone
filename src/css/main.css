@@ -259,6 +259,7 @@ nav {
   display: flex;
   align-items: center;
   margin-right: 2rem;
+  cursor: pointer;
 }
 
 .nav-container .nav-links .right-side-nav .location .location-marker {
@@ -266,7 +267,12 @@ nav {
   font-size: 1.3rem;
 }
 
-.nav-container .nav-links .right-side-nav .location:hover a {
+.nav-container .nav-links .right-side-nav .location .find-store li {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.nav-container .nav-links .right-side-nav .location:hover li {
   color: #008248;
 }
 
@@ -284,7 +290,7 @@ nav {
     display: block;
     position: fixed;
     right: 0;
-    top: 17%;
+    top: 14%;
     height: 100vh;
     padding: 2rem 2rem;
     background-color: white;
@@ -891,9 +897,6 @@ footer .copy-right p {
 
 .aside-container .aside li {
   font-size: 1rem;
-}
-
-.aside-container .aside li a {
   color: rgba(0, 0, 0, 0.56);
 }
 
@@ -1989,23 +1992,17 @@ footer .copy-right p {
   margin: 1rem 0;
 }
 
-.featured-container main img {
-  border-radius: 5px;
-  width: 100%;
-  height: auto;
-  transition: 0.5s ease-in-out;
-}
-
-.featured-container main img:hover {
-  transform: translateY(-7%);
-  transition: 0.4s ease-in-out;
-}
-
-.featured-container main figure {
+.card-list-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 1rem;
   row-gap: 2rem;
+}
+
+.card-list-item img {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 760px) {

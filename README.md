@@ -5,6 +5,7 @@
 
 ## SCREENSHOTS
 [![Screen-Shot-2021-06-22-at-16-17-56.png](https://i.postimg.cc/MTwk46Tc/Screen-Shot-2021-06-22-at-16-17-56.png)](https://postimg.cc/f38gShYZ)
+[![Screen-Shot-2021-06-22-at-16-18-17.png](https://i.postimg.cc/BQKg8xN0/Screen-Shot-2021-06-22-at-16-18-17.png)](https://postimg.cc/nCn7g96R)
 
 
 
